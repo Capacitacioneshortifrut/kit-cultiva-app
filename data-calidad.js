@@ -400,7 +400,7 @@ Object.assign(window.PROFILES, {
         "steps": [
           {
             "k": "Observo",
-            "t": "cómo el colaborador maneja la fricción con operaciones, no solo el resultado técnico."
+            "t": "cómo el Coordinador maneja la fricción con operaciones, no solo el resultado técnico."
           },
           {
             "k": "Identifico",
@@ -668,7 +668,7 @@ Object.assign(window.PROFILES, {
         "steps": [
           {
             "k": "Observo",
-            "t": "cómo el colaborador maneja la fricción con operaciones/cosecha, no solo el resultado técnico."
+            "t": "cómo el Supervisor maneja la fricción con operaciones/cosecha, no solo el resultado técnico."
           },
           {
             "k": "Identifico",

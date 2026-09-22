@@ -725,7 +725,7 @@ Object.assign(window.PROFILES, {
         "icon": "message-square-quote",
         "title": "Acompañamiento 1 a 1",
         "freq": "2 Supervisores al mes",
-        "purpose": "Desarrollar al líder en terreno, en tiempo real, mediante observación, pregunta y acuerdo — modelo CIA integrado (Comportamiento o Problema · Impacto · Acuerdo).",
+        "purpose": "Desarrollar al Supervisor en terreno, en tiempo real, mediante observación, pregunta y acuerdo — modelo CIA integrado (Comportamiento o Problema · Impacto · Acuerdo).",
         "context": {
           "freq": "2 Supervisores al mes",
           "when": "20 min",
@@ -734,7 +734,7 @@ Object.assign(window.PROFILES, {
         "steps": [
           {
             "k": "Observo",
-            "t": "noto en terreno cómo trabaja el líder: sus decisiones, su trato al equipo, su presencia."
+            "t": "noto en terreno cómo trabaja el Supervisor: sus decisiones, su trato al equipo, su presencia."
           },
           {
             "k": "Identifico",
