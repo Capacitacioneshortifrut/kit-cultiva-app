@@ -27,7 +27,7 @@ window.TEMAS = {
     { id: "operativos", label: "Operativos", color: "#2F6E7A", items: [
       { id: "paralizaciones",  label: "Paralizaciones",        icon: "circle-pause",   desc: "El equipo paró o amenaza con parar labores.", alerta: "paralizacion" },
       { id: "falta-agua",      label: "Falta de agua",         icon: "droplets",       desc: "No hay agua para consumo o para la labor." },
-      { id: "tareos",          label: "Tareos",                icon: "clipboard-list", desc: "Problemas con el registro o conteo de tareo." },
+      { id: "tareos",          label: "Tareos",                icon: "clipboard-list", desc: "Problemas con la marcación o el conteo de tareo." },
       { id: "fotocheck",       label: "Problemas con fotocheck", icon: "id-card",      desc: "Fotocheck perdido, dañado o que no marca." },
       { id: "logistica",       label: "Logística de traslado", icon: "bus",            desc: "Movilidad, recojo o traslado del personal." },
     ]},
