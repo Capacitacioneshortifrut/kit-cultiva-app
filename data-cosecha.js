@@ -75,7 +75,7 @@ window.PROFILES = {
         "icon": "message-square-quote",
         "title": "Acompañamiento 1 a 1",
         "freq": "1 vez al mes",
-        "purpose": "Desarrollar al nivel de abajo mediante la observación, la reflexión y acuerdos concretos para potenciar sus fortalezas y mejorar su desempeño",
+        "purpose": "Desarrollar a un miembro de tu equipo mediante la observación, la reflexión y acuerdos concretos para potenciar sus fortalezas y mejorar su desempeño",
         "context": {
           "freq": "1 vez al mes",
           "when": "30-45 min",
@@ -441,7 +441,7 @@ window.PROFILES = {
         "icon": "message-square-quote",
         "title": "Acompañamiento 1 a 1",
         "freq": "1 vez al mes",
-        "purpose": "Desarrollar al nivel de abajo mediante la observación, la reflexión y acuerdos concretos para potenciar sus fortalezas y mejorar su desempeño",
+        "purpose": "Desarrollar a un miembro de tu equipo mediante la observación, la reflexión y acuerdos concretos para potenciar sus fortalezas y mejorar su desempeño",
         "context": {
           "freq": "1 vez al mes",
           "when": "30 min",

@@ -26,7 +26,7 @@ Object.assign(window.PROFILES, {
         "icon": "message-square-quote",
         "title": "Acompañamiento 1 a 1",
         "freq": "1 vez al mes",
-        "purpose": "Desarrollar al nivel de abajo mediante observación, pregunta y acuerdo concreto — modelo CIA integrado (Comportamiento o Problema · Impacto · Acuerdo).",
+        "purpose": "Desarrollar a un miembro de tu equipo mediante observación, pregunta y acuerdo concreto — modelo CIA integrado (Comportamiento o Problema · Impacto · Acuerdo).",
         "context": {
           "freq": "1 vez al mes",
           "when": "30-45 min",
@@ -398,7 +398,7 @@ Object.assign(window.PROFILES, {
         "icon": "message-square-quote",
         "title": "Acompañamiento 1 a 1",
         "freq": "1 vez al mes",
-        "purpose": "Desarrollar al nivel de abajo mediante observación, pregunta y acuerdo concreto — modelo CIA integrado (Comportamiento o Problema · Impacto · Acuerdo).",
+        "purpose": "Desarrollar a un miembro de tu equipo mediante observación, pregunta y acuerdo concreto — modelo CIA integrado (Comportamiento o Problema · Impacto · Acuerdo).",
         "context": {
           "freq": "1 vez al mes",
           "when": "30 min",
