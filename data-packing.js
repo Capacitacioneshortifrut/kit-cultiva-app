@@ -67,7 +67,7 @@ Object.assign(window.PROFILES, {
         ],
         "phrases": [
           "\"Vi [comportamiento o problema]. Eso generó [impacto]. ¿Qué acuerdo tomamos?\"",
-          "“Lo que mejor vi este mes fue [comportamiento], que generó [impacto]. Quiero que sepas que lo registré.”",
+          "“Lo que mejor vi este mes fue [comportamiento], que generó [impacto]. Quiero que sepas que lo valoro.”",
           "\"No vine a corregirte, vine a alinearnos. ¿Qué necesitas de mí?\"",
           "\"¿Qué crees que pasó? ¿Qué cambiarías tú?\"",
           "\"Repíteme el acuerdo para asegurarnos de que quedamos igual.\"",
@@ -230,8 +230,8 @@ Object.assign(window.PROFILES, {
             "t": "Sin interrumpir. Si nadie habla: \"¿Cómo vienen hoy?\""
           },
           {
-            "k": "Registro",
-            "t": "Registro el tema y su contexto."
+            "k": "Retengo",
+            "t": "Me quedo con el tema y su contexto para darle seguimiento."
           },
           {
             "k": "Actúo",
@@ -249,7 +249,7 @@ Object.assign(window.PROFILES, {
           "\"La semana pasada [nombre] planteó [tema]. Esto es lo que se decidió.\""
         ],
         "no": [
-          "Escuchar sin dejar rastro — si no lo registras, se pierde el patrón.",
+          "Escuchar sin dar seguimiento — si el tema no se atiende, se repite.",
           "Prometer respuesta sin fecha.",
           "No cerrar el loop la siguiente semana con quien lo trajo."
         ],
@@ -375,9 +375,22 @@ Object.assign(window.PROFILES, {
           "soporte": "Registro de reconocimiento",
           "fields": [
             {
-              "k": "persona",
-              "l": "Nombre de la persona a reconocer",
-              "t": "person"
+              "k": "reconozco",
+              "l": "Reconozco a",
+              "t": "reportes",
+              "req": true
+            },
+            {
+              "k": "pilar",
+              "l": "Pilar que reconozco",
+              "t": "sel",
+              "req": true,
+              "o": [
+                "Excelencia: Elevó el estándar de su trabajo",
+                "Eficiencia: Simplificó y ejecutó con agilidad",
+                "Accountability: Se hizo cargo de principio a fin",
+                "Integridad: Actuó con transparencia y cuidó a las personas"
+              ]
             }
           ]
         },
@@ -444,7 +457,7 @@ Object.assign(window.PROFILES, {
         ],
         "phrases": [
           "\"Vi [comportamiento o problema]. Eso generó [impacto]. ¿Qué acuerdo tomamos?\"",
-          "“Lo que mejor vi este mes fue [comportamiento], que generó [impacto]. Quiero que sepas que lo registré.”",
+          "“Lo que mejor vi este mes fue [comportamiento], que generó [impacto]. Quiero que sepas que lo valoro.”",
           "\"No vine a corregirte, vine a alinearnos. ¿Qué necesitas de mí?\"",
           "\"¿Qué crees que pasó? ¿Qué cambiarías tú?\"",
           "\"Repíteme el acuerdo para asegurarnos de que quedamos igual.\"",
@@ -531,8 +544,8 @@ Object.assign(window.PROFILES, {
             "t": "fomentando confianza y apertura"
           },
           {
-            "k": "Registro",
-            "t": "vía app: escribo la situación + establezco Urgencia (Hoy / Esta semana)."
+            "k": "Retengo",
+            "t": "Me quedo con la situación y su urgencia (Hoy / Esta semana) para darle seguimiento."
           },
           {
             "k": "Doy cierre",
@@ -672,9 +685,22 @@ Object.assign(window.PROFILES, {
           "soporte": "App Cultiva — Plantilla de Reconocimiento (jefaturas)",
           "fields": [
             {
-              "k": "persona",
-              "l": "Nombre de la persona a reconocer",
-              "t": "person"
+              "k": "reconozco",
+              "l": "Reconozco a",
+              "t": "reportes",
+              "req": true
+            },
+            {
+              "k": "pilar",
+              "l": "Pilar que reconozco",
+              "t": "sel",
+              "req": true,
+              "o": [
+                "Excelencia: Elevó el estándar de su trabajo",
+                "Eficiencia: Simplificó y ejecutó con agilidad",
+                "Accountability: Se hizo cargo de principio a fin",
+                "Integridad: Actuó con transparencia y cuidó a las personas"
+              ]
             }
           ]
         },
@@ -741,7 +767,7 @@ Object.assign(window.PROFILES, {
         ],
         "phrases": [
           "\"Vi [comportamiento o problema]. Eso generó [impacto]. ¿Qué acuerdo tomamos?\"",
-          "“Lo que mejor vi este mes fue [comportamiento], que generó [impacto]. Quiero que sepas que lo registré.”",
+          "“Lo que mejor vi este mes fue [comportamiento], que generó [impacto]. Quiero que sepas que lo valoro.”",
           "\"¿Qué necesitas de mí para que esto salga mejor?\"",
           "\"Repíteme el acuerdo para asegurarnos de que quedamos igual.\"",
           "\"Antes de irme quiero reconocer que [conducta positiva]. Eso marca la diferencia.\""
@@ -823,8 +849,8 @@ Object.assign(window.PROFILES, {
             "t": "fomentando confianza y apertura"
           },
           {
-            "k": "Registro",
-            "t": "vía app: escribo la situación + establezco Urgencia (Hoy / Esta semana)."
+            "k": "Retengo",
+            "t": "Me quedo con la situación y su urgencia (Hoy / Esta semana) para darle seguimiento."
           },
           {
             "k": "Doy cierre",
@@ -902,7 +928,7 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Respondo",
-            "t": "si resuelvo, actúo y registro la respuesta (el N4 recibe notificación automática)."
+            "t": "si resuelvo, actúo y le doy respuesta (el N4 recibe notificación automática)."
           },
           {
             "k": "Escalo",
@@ -969,9 +995,22 @@ Object.assign(window.PROFILES, {
           "soporte": "App Cultiva — Plantilla de Reconocimiento (jefaturas)",
           "fields": [
             {
-              "k": "persona",
-              "l": "Nombre de la persona a reconocer",
-              "t": "person"
+              "k": "reconozco",
+              "l": "Reconozco a",
+              "t": "reportes",
+              "req": true
+            },
+            {
+              "k": "pilar",
+              "l": "Pilar que reconozco",
+              "t": "sel",
+              "req": true,
+              "o": [
+                "Excelencia: Elevó el estándar de su trabajo",
+                "Eficiencia: Simplificó y ejecutó con agilidad",
+                "Accountability: Se hizo cargo de principio a fin",
+                "Integridad: Actuó con transparencia y cuidó a las personas"
+              ]
             }
           ]
         }
@@ -1097,8 +1136,8 @@ Object.assign(window.PROFILES, {
             "t": "si depende de otra área, lo verifico y pido que me lo recuerden para retomarlo."
           },
           {
-            "k": "Registro",
-            "t": "vía app: la situación + Urgencia (Hoy / Esta semana)."
+            "k": "Retengo",
+            "t": "Me quedo con la situación y su urgencia (Hoy / Esta semana)."
           },
           {
             "k": "Doy cierre",
@@ -1198,9 +1237,22 @@ Object.assign(window.PROFILES, {
           "soporte": "Registro de reconocimiento",
           "fields": [
             {
-              "k": "persona",
-              "l": "Nombre de la persona a reconocer",
-              "t": "person"
+              "k": "reconozco",
+              "l": "Reconozco a",
+              "t": "reportes",
+              "req": true
+            },
+            {
+              "k": "pilar",
+              "l": "Pilar que reconozco",
+              "t": "sel",
+              "req": true,
+              "o": [
+                "Excelencia: Elevó el estándar de su trabajo",
+                "Eficiencia: Simplificó y ejecutó con agilidad",
+                "Accountability: Se hizo cargo de principio a fin",
+                "Integridad: Actuó con transparencia y cuidó a las personas"
+              ]
             }
           ]
         }
@@ -1330,9 +1382,22 @@ Object.assign(window.PROFILES, {
           "soporte": "Registro de reconocimiento",
           "fields": [
             {
-              "k": "persona",
-              "l": "Nombre de la persona a reconocer",
-              "t": "person"
+              "k": "reconozco",
+              "l": "Reconozco a",
+              "t": "reportes",
+              "req": true
+            },
+            {
+              "k": "pilar",
+              "l": "Pilar que reconozco",
+              "t": "sel",
+              "req": true,
+              "o": [
+                "Excelencia: Elevó el estándar de su trabajo",
+                "Eficiencia: Simplificó y ejecutó con agilidad",
+                "Accountability: Se hizo cargo de principio a fin",
+                "Integridad: Actuó con transparencia y cuidó a las personas"
+              ]
             }
           ]
         }

@@ -64,7 +64,7 @@ function temaInfo(val) {
   return null;
 }
 
-function CultivaRegistroForm({ ritual, profileId, escalateTo }) {
+function CultivaRegistroForm({ ritual, profileId, user, escalateTo }) {
   const reg = ritual.registro;
   const espacioConfianza = isEspacioConfianza(ritual);
   const baseFields = reg.fields || [];
@@ -90,6 +90,19 @@ function CultivaRegistroForm({ ritual, profileId, escalateTo }) {
   const [drafts, setDrafts] = rUse({});           // ts -> { campoDiferido: valor }
   const [savedFollow, setSavedFollow] = rUse({});  // ts -> true (acaba de guardar seguimiento)
   const [escStatus, setEscStatus] = rUse({});      // registro_id -> { status } (escaladas que levanté)
+  const [reportes, setReportes] = rUse([]);        // reportes directos (para campo "reportes")
+  const [reportesLoaded, setReportesLoaded] = rUse(false);
+
+  // ¿hay un campo de tipo "reportes" (desplegable de reportes directos)?
+  const needsReportes = (reg.fields || []).some((f) => f.t === "reportes");
+  rEff(() => {
+    if (!needsReportes || !window.CultivaData.reportesDirectos) { setReportesLoaded(true); return; }
+    let alive = true; setReportesLoaded(false);
+    window.CultivaData.reportesDirectos(user)
+      .then((list) => { if (alive) { setReportes(list || []); setReportesLoaded(true); } })
+      .catch(() => { if (alive) { setReportes([]); setReportesLoaded(true); } });
+    return () => { alive = false; };
+  }, [needsReportes, user && user.legajo]);
 
   function seedDrafts(h) {
     const d = {};
@@ -248,6 +261,19 @@ function CultivaRegistroForm({ ritual, profileId, escalateTo }) {
         ),
         RI("chevron-down", "fld-sel-ico"),
       );
+    } else if (f.t === "reportes") {
+      const hasRep = reportes.length > 0;
+      control = rh("div", { className: "fld-sel-wrap" },
+        rh("select", Object.assign({}, common, { className: common.className + " fld-sel",
+          disabled: !hasRep,
+          onChange: (e) => setField(f.k, e.target.value) }),
+          rh("option", { value: "" },
+            !reportesLoaded ? RT("form.loading")
+              : (hasRep ? RT("form.chooseReport") : RT("form.noReports"))),
+          reportes.map((r) => rh("option", { key: r.legajo || r.nombre, value: r.nombre }, r.nombre)),
+        ),
+        RI("chevron-down", "fld-sel-ico"),
+      );
     } else if (f.t === "area") {
       control = rh("textarea", Object.assign({}, common, {
         rows: 2, placeholder: f.ph || RT("form.writeHere"),
@@ -257,7 +283,7 @@ function CultivaRegistroForm({ ritual, profileId, escalateTo }) {
       control = rh("div", { className: "fld-sel-wrap" },
         rh("select", Object.assign({}, common, { className: common.className + " fld-sel",
           onChange: (e) => setField(f.k, e.target.value) }),
-          rh("option", { value: "" }, "Elegir…"),
+          rh("option", { value: "" }, RT("form.choose")),
           (f.o || []).map((opt) => rh("option", { key: opt, value: opt }, opt)),
         ),
         RI("chevron-down", "fld-sel-ico"),
@@ -325,8 +351,8 @@ function CultivaRegistroForm({ ritual, profileId, escalateTo }) {
   const alerta = chosen && chosen.alerta ? window.TEMAS.alertas[chosen.alerta] : null;
 
   return rh("section", { className: "registro" },
-    rh("div", { className: "registro-soporte" },
-      RI("smartphone", "ico-xs"), rh("span", null, reg.soporte)),
+    (!needsReportes && reg.soporte) ? rh("div", { className: "registro-soporte" },
+      RI("smartphone", "ico-xs"), rh("span", null, reg.soporte)) : null,
 
     justSent && rh("div", { className: "sent-banner" },
       RI("check-check", "ico-xs"),

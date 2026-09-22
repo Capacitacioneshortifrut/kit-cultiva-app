@@ -356,7 +356,7 @@ function RitualVideo({ url }) {
 }
 
 /* ---------- detalle de un ritual --------------------------- */
-function Detail({ profile, ritual, onBack, onEscaladas }) {
+function Detail({ profile, ritual, user, onBack, onEscaladas }) {
   const dim = window.DIMS[ritual.dimension];
   useEffect(() => { if (window.lucide) window.lucide.createIcons(); }, [ritual.id]);
 
@@ -433,8 +433,10 @@ function Detail({ profile, ritual, onBack, onEscaladas }) {
     h("div", { className: "detail-scroll" },
       h("div", { className: "detail-hero" },
         h("span", { className: "detail-ico" }, I(ritual.icon)),
-        h("h1", { className: "detail-title" }, ritual.title),
-        h("span", { className: "detail-freq" }, I("repeat", "ico-xs"), ritual.freq),
+        h("div", { className: "detail-hero-txt" },
+          h("h1", { className: "detail-title" }, ritual.title),
+          h("span", { className: "detail-freq" }, I("repeat", "ico-xs"), ritual.freq),
+        ),
       ),
 
       ritual.kind === "light"
@@ -504,9 +506,9 @@ function Detail({ profile, ritual, onBack, onEscaladas }) {
               : (ritual.no ? h(Accordion, { icon: "x-circle", title: T("detail.dont"), color: "#A81519" },
                   h("ul", { className: "no-list" }, ritual.no.map((x, i) => h("li", { key: i }, x)))) : null),
 
-            (esReco && ritual.registro && !ritual.registro.hidden) ? h(Accordion, { icon: "square-pen", title: T("detail.register"), color: "#4156A2", defaultOpen: true },
+            (esReco && ritual.registro && !ritual.registro.hidden) ? h(Accordion, { icon: "award", title: T("detail.recognize"), color: "#4156A2", defaultOpen: true },
               h(window.CultivaRegistroForm, {
-                ritual: ritual, profileId: profile.id,
+                ritual: ritual, profileId: profile.id, user: user,
                 escalateTo: canEscalate ? TC(ESCALATE_TO[profile.id]) : null,
               })) : null,
 
@@ -1048,7 +1050,7 @@ function CosechaApp() {
       profile: profile, onBack: () => setView("gallery"),
     }) : null,
     view === "detail" && ritual ? h(Detail, {
-      profile: profile, ritual: ritual, onBack: () => setView("gallery"),
+      profile: profile, ritual: ritual, user: user, onBack: () => setView("gallery"),
       onEscaladas: () => setView("escaladas"),
     }) : null,
     view === "escaladas" && profile ? h(window.EscaladasInbox, {

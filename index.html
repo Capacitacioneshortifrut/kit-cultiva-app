@@ -312,11 +312,12 @@
   /* ================= DETAIL ================= */
   .detail { display: flex; flex-direction: column; min-height: 0; }
   .detail-scroll { flex: 1; min-height: 0; overflow-y: auto; padding: 22px 18px 36px; }
-  .detail-hero { display: flex; flex-direction: column; align-items: flex-start; gap: 13px; margin-bottom: 18px; }
-  .detail-ico { width: 58px; height: 58px; border-radius: 17px; display: flex; align-items: center;
+  .detail-hero { display: flex; flex-direction: row; align-items: center; gap: 12px; margin-bottom: 18px; }
+  .detail-hero-txt { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; min-width: 0; flex: 1; }
+  .detail-ico { width: 40px; height: 40px; border-radius: 12px; flex: none; display: flex; align-items: center;
     justify-content: center; color: var(--dc); background: color-mix(in srgb, var(--dc) 13%, #fff); }
-  .detail-ico i { width: 30px; height: 30px; }
-  .detail-title { font-family: var(--font-display); font-weight: 800; font-size: 28px; line-height: 1.04;
+  .detail-ico i { width: 21px; height: 21px; }
+  .detail-title { font-family: var(--font-display); font-weight: 800; font-size: 23px; line-height: 1.06;
     margin: 0; color: var(--ink-900); letter-spacing: -0.01em; text-wrap: balance; }
   .detail-freq { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600;
     color: var(--ink-500); background: var(--paper-sunken); padding: 5px 12px; border-radius: 999px; }
