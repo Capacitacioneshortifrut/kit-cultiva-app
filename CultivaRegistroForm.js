@@ -92,6 +92,9 @@ function CultivaRegistroForm({ ritual, profileId, user, escalateTo }) {
   const [escStatus, setEscStatus] = rUse({});      // registro_id -> { status } (escaladas que levanté)
   const [reportes, setReportes] = rUse([]);        // reportes directos (para campo "reportes")
   const [reportesLoaded, setReportesLoaded] = rUse(false);
+  const [repQuery, setRepQuery] = rUse("");         // texto escrito en el buscador
+  const [repOpen, setRepOpen] = rUse(false);        // lista desplegada
+  function normTxt(x) { return (x || "").toString().toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); }
 
   // ¿hay un campo de tipo "reportes" (desplegable de reportes directos)?
   const needsReportes = (reg.fields || []).some((f) => f.t === "reportes");
@@ -117,6 +120,7 @@ function CultivaRegistroForm({ ritual, profileId, user, escalateTo }) {
   rEff(() => {
     setVals(emptyValues(formFields));
     setTemaOtro(""); setErrs({}); setJustSent(null); setOpen(true); setSavedFollow({});
+    setRepQuery(""); setRepOpen(false);
     setHistory([]); setEscaladoIds({}); setDrafts({}); setEscStatus({});
     let alive = true;
     window.CultivaData.listRegistros(profileId, ritual.id).then((h) => {
@@ -162,7 +166,7 @@ function CultivaRegistroForm({ ritual, profileId, user, escalateTo }) {
     const entry = { ts: Date.now(), escalado: false, vals: stored };
     setHistory((h) => [entry].concat(h).slice(0, 30));
     setDrafts((p) => { const row = {}; deferFields.forEach((f) => { row[f.k] = ""; }); return Object.assign({}, p, { [entry.ts]: row }); });
-    setVals(emptyValues(formFields)); setTemaOtro(""); setErrs({});
+    setVals(emptyValues(formFields)); setTemaOtro(""); setErrs({}); setRepQuery(""); setRepOpen(false);
     setJustSent({ ts: entry.ts, escalado: escalaAlJefe });
     setOpen(true);
     // persiste (demo localStorage ↔ Supabase) y reconcilia el id real
@@ -263,16 +267,31 @@ function CultivaRegistroForm({ ritual, profileId, user, escalateTo }) {
       );
     } else if (f.t === "reportes") {
       const hasRep = reportes.length > 0;
-      control = rh("div", { className: "fld-sel-wrap" },
-        rh("select", Object.assign({}, common, { className: common.className + " fld-sel",
-          disabled: !hasRep,
-          onChange: (e) => setField(f.k, e.target.value) }),
-          rh("option", { value: "" },
-            !reportesLoaded ? RT("form.loading")
-              : (hasRep ? RT("form.chooseReport") : RT("form.noReports"))),
-          reportes.map((r) => rh("option", { key: r.legajo || r.nombre, value: r.nombre }, r.nombre)),
+      const chosen = vals[f.k];
+      const nq = normTxt(repQuery);
+      const filtered = nq ? reportes.filter((r) => normTxt(r.nombre).indexOf(nq) >= 0) : reportes;
+      const ph = !reportesLoaded ? RT("form.loading")
+        : (hasRep ? RT("form.searchReport") : RT("form.noReports"));
+      control = rh("div", { className: "fld-combo" },
+        rh("div", { className: "fld-sel-wrap" },
+          rh("input", {
+            id: idAttr, autoComplete: "off",
+            className: "fld-ctrl" + (bad ? " err" : ""),
+            value: repQuery, placeholder: ph, disabled: !hasRep,
+            onChange: (e) => { setRepQuery(e.target.value); setField(f.k, ""); setRepOpen(true); },
+            onFocus: () => setRepOpen(true),
+            onBlur: () => setTimeout(() => setRepOpen(false), 160),
+          }),
+          chosen ? RI("check", "fld-sel-ico") : RI("search", "fld-sel-ico"),
         ),
-        RI("chevron-down", "fld-sel-ico"),
+        (repOpen && hasRep) ? rh("div", { className: "combo-list" },
+          filtered.length
+            ? filtered.slice(0, 60).map((r) => rh("button", {
+                key: r.legajo || r.nombre, type: "button", className: "combo-item",
+                onMouseDown: () => { setField(f.k, r.nombre); setRepQuery(r.nombre); setRepOpen(false); },
+              }, r.nombre))
+            : rh("div", { className: "combo-empty" }, RT("form.noMatch"))
+        ) : null,
       );
     } else if (f.t === "area") {
       control = rh("textarea", Object.assign({}, common, {
@@ -308,7 +327,7 @@ function CultivaRegistroForm({ ritual, profileId, user, escalateTo }) {
       }));
     }
 
-    const wide = (f.t === "area" || f.t === "tema");
+    const wide = (f.t === "area" || f.t === "tema" || f.t === "reportes");
     return rh("div", { className: "fld" + (wide ? " wide" : "") + (f.t === "bool" ? " inline" : ""), key: f.k },
       rh("label", { className: "fld-l", htmlFor: idAttr },
         f.l, f.req ? rh("span", { className: "req" }, "*") : null,

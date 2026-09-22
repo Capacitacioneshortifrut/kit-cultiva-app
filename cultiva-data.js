@@ -180,12 +180,11 @@
     reportesDirectos: function (user) {
       user = user || {};
       if (!isSb()) {
-        var ord = ["N1", "N2", "N3", "N4"];
-        var i = ord.indexOf(user.nivel);
-        var next = (i >= 0) ? ord[i + 1] : null;
+        // Demo: N1/N2/N3 ven a TODA la gente de su área registrada en el padrón;
+        // N4 (y otros) no ven a nadie. En producción manda la jerarquía real (legajo_jefe).
+        if (["N1", "N2", "N3"].indexOf(user.nivel) < 0) return Promise.resolve([]);
         var list = (window.USUARIOS || []).filter(function (u) {
-          return !u.es_admin && next && u.nivel === next &&
-            u.gerencia === user.gerencia && u.legajo !== user.legajo;
+          return !u.es_admin && u.gerencia === user.gerencia && u.legajo !== user.legajo;
         }).map(function (u) { return { legajo: u.legajo, nombre: u.nombre }; });
         return Promise.resolve(list);
       }
