@@ -173,6 +173,30 @@
     },
 
     /* ---- MI EQUIPO (por jerarquía) ---- */
+    /* Reportes directos del usuario conectado (para el desplegable de
+       Reconocimiento). Demo: se derivan por regla del padrón (misma gerencia,
+       un nivel por debajo). Supabase: se consultan por legajo_jefe (RLS por
+       jerarquía). Devuelve [{ legajo, nombre }]. */
+    reportesDirectos: function (user) {
+      user = user || {};
+      if (!isSb()) {
+        // Demo: N1/N2/N3 ven a TODA la gente de su área registrada en el padrón;
+        // N4 (y otros) no ven a nadie. En producción manda la jerarquía real (legajo_jefe).
+        if (["N1", "N2", "N3"].indexOf(user.nivel) < 0) return Promise.resolve([]);
+        var list = (window.USUARIOS || []).filter(function (u) {
+          return !u.es_admin && u.gerencia === user.gerencia && u.legajo !== user.legajo;
+        }).map(function (u) { return { legajo: u.legajo, nombre: u.nombre }; });
+        return Promise.resolve(list);
+      }
+      var legajo = user.legajo || _me;
+      return client().from("usuarios").select("legajo,nombre,nombre_corto")
+        .eq("legajo_jefe", legajo).order("nombre")
+        .then(function (q) {
+          if (q.error) throw q.error;
+          return (q.data || []).map(function (u) { return { legajo: u.legajo, nombre: u.nombre }; });
+        });
+    },
+
     /* puntos de la semana de todo el equipo hacia abajo. */
     equipoPuntos: function (perfil) {
       if (!isSb()) return Promise.resolve([
