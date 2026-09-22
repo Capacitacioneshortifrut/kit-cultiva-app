@@ -42,7 +42,7 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Comparto",
-            "t": "\"Observé que [comportamiento o problema]. Esto generó [impacto]. ¿Qué acuerdo tomamos para corregirlo?\""
+            "t": "\"Observé que [mencionar comportamiento o problema]. Esto generó [mencionar impacto]. ¿Qué acuerdo tomamos para corregirlo / potenciarlo?\""
           },
           {
             "k": "Escucho",
@@ -432,7 +432,7 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Comparto",
-            "t": "\"Observé que [comportamiento o problema]. Esto generó [impacto]. ¿Qué acuerdo tomamos para corregirlo?\""
+            "t": "\"Observé que [mencionar comportamiento o problema]. Esto generó [mencionar impacto]. ¿Qué acuerdo tomamos para corregirlo / potenciarlo?\""
           },
           {
             "k": "Escucho",
@@ -742,7 +742,7 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Comparto",
-            "t": "\"Observé que [comportamiento o problema]. Esto generó [impacto]. ¿Qué acuerdo tomamos para corregirlo?\""
+            "t": "\"Observé que [mencionar comportamiento o problema]. Esto generó [mencionar impacto]. ¿Qué acuerdo tomamos para corregirlo / potenciarlo?\""
           },
           {
             "k": "Escucho",

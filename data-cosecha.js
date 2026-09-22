@@ -92,7 +92,7 @@ window.PROFILES = {
           },
           {
             "k": "Abro",
-            "t": "\"Observé que [comportamiento o problema]. Esto generó [impacto]. ¿Qué acuerdo tomamos para corregirlo?\""
+            "t": "\"Observé que [mencionar comportamiento o problema]. Esto generó [mencionar impacto]. ¿Qué acuerdo tomamos para corregirlo / potenciarlo?\""
           },
           {
             "k": "Escucho",
@@ -458,7 +458,7 @@ window.PROFILES = {
           },
           {
             "k": "Comparto",
-            "t": "\"Observé que [comportamiento o problema]. Esto generó [impacto]. ¿Qué acuerdo tomamos para corregirlo?\""
+            "t": "\"Observé que [mencionar comportamiento o problema]. Esto generó [mencionar impacto]. ¿Qué acuerdo tomamos para corregirlo / potenciarlo?\""
           },
           {
             "k": "Escucho",
@@ -767,7 +767,7 @@ window.PROFILES = {
           },
           {
             "k": "Comparto",
-            "t": "con CIA: \"Observé que [comportamiento o problema]. Esto generó [impacto]. ¿Qué acuerdo tomamos para corregirlo?\""
+            "t": "con CIA: \"Observé que [mencionar comportamiento o problema]. Esto generó [mencionar impacto]. ¿Qué acuerdo tomamos para corregirlo / potenciarlo?\""
           },
           {
             "k": "Indago",
