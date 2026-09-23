@@ -986,27 +986,23 @@ Object.assign(window.PROFILES, {
         "steps": [
           {
             "k": "Observo",
-            "t": "cómo el TAC maneja la fricción con operaciones/cosecha (no solo el resultado técnico) e identifico una conducta para corregir o potenciar."
+            "t": "cómo el colaborador maneja la fricción con operaciones/cosecha, no solo el resultado técnico."
           },
           {
             "k": "Me acerco",
             "t": "con apertura neutra: \"Oye, ¿cómo fue ese momento con el supervisor de campo/planta?\""
           },
           {
-            "k": "Comparto",
-            "t": "\"Observé que [mencionar comportamiento o problema]. Esto generó [mencionar impacto]. ¿Qué acuerdo tomamos para corregirlo / potenciarlo?\""
-          },
-          {
-            "k": "Escucho",
-            "t": "2 minutos sin interrumpir."
+            "k": "Abro",
+            "t": "con CIA — \"Vi [mencionar comportamiento o problema]. Eso generó [mencionar impacto]. ¿Qué acuerdo tomamos?\""
           },
           {
             "k": "Pregunto",
-            "t": "invito a reflexionar: \"¿Qué harías tú distinto en una próxima situación similar?\""
+            "t": "¿qué haría distinto en una próxima situación similar?"
           },
           {
             "k": "Acordamos",
-            "t": "construimos juntos una sola cosa concreta para la próxima vez."
+            "t": "una sola cosa concreta para la próxima vez."
           },
           {
             "k": "Cierro",
@@ -1014,7 +1010,7 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Vuelvo",
-            "t": "después de la próxima situación de fricción: \"¿Cómo te resultó lo que acordamos?\""
+            "t": "después de la próxima situación de fricción."
           }
         ],
         "phrases": [
@@ -1027,8 +1023,7 @@ Object.assign(window.PROFILES, {
           "Enmarcar el acompañamiento solo en el resultado técnico.",
           "Dar la solución — es desarrollo, no instrucción.",
           "Irse sin un acuerdo concreto.",
-          "No volver a preguntar sobre el acuerdo.",
-          "Generalizar (\"siempre haces…\") en vez de nombrar un hecho concreto."
+          "No volver a preguntar sobre el acuerdo."
         ],
         "registro": {
           "soporte": "Tarjeta Acompañamiento 1 a 1",

@@ -1052,7 +1052,7 @@ Object.assign(window.PROFILES, {
         "icon": "message-square-quote",
         "title": "Acompañamiento 1 a 1",
         "freq": "Diario (ambos turnos)",
-        "purpose": "Acompañar en las líneas (ambos turnos) con CIA (Comportamiento · Impacto · Acuerdo): reconocer el avance, señalar la desviación con su impacto en el cliente, desarrollar al líder a cargo para que haga su propio acompañamiento y tratar la seguridad como no negociable.",
+        "purpose": "Acompañar en las líneas (ambos turnos): reconocer el avance, señalar la desviación con su impacto en el cliente, desarrollar al líder a cargo para que haga su propio acompañamiento y tratar la seguridad como no negociable.",
         "context": {
           "freq": "Diario (ambos turnos)",
           "place": "En movimiento por las líneas durante el turno"
@@ -1068,27 +1068,19 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Señalo la desviación con su impacto",
-            "t": "\"Veo que [mencionar comportamiento o problema]. Esto genera [mencionar impacto], y esa calificación es la calidad que le llega al cliente.\""
+            "t": "\"Están reportando [desviación], y esa calificación es la calidad que le llega al cliente.\""
           },
           {
-            "k": "Pregunto",
-            "t": "invito a reflexionar: \"¿Qué harías tú distinto?\""
-          },
-          {
-            "k": "Acordamos",
-            "t": "construimos juntos el acuerdo: le pido que haga su propio acompañamiento 1 a 1, saque muestreo e identifique de dónde vienen las desviaciones, en vez de resolverlo yo."
+            "k": "Desarrollo al líder a cargo",
+            "t": "le pido que haga su propio acompañamiento 1 a 1, saque muestreo e identifique de dónde vienen las desviaciones, en vez de resolverlo yo."
           },
           {
             "k": "En seguridad, no negocio",
             "t": "si falta un EPP, lo corrijo en el momento: \"por tu seguridad y bienestar\"."
           },
           {
-            "k": "Cierro",
+            "k": "Cierro pidiendo retorno",
             "t": "\"¿Me comentas una vez corregido?\""
-          },
-          {
-            "k": "Vuelvo",
-            "t": "paso a verificar en los próximos días."
           }
         ],
         "phrases": [
@@ -1096,16 +1088,14 @@ Object.assign(window.PROFILES, {
           "\"Haz acompañamiento 1 a 1 con tu equipo: saca el muestreo e identifica de dónde vienen las desviaciones.\"",
           "\"Ellos deben verte como su líder: acompáñalos y oriéntalos cuando algo no sale bien.\"",
           "\"Te pido que uses tu EPP por tu propia seguridad y bienestar. No ejecutamos labores sin EPP.\"",
-          "\"¿Me comentas una vez corregido?\"",
-          "\"¿Qué harías tú distinto la próxima vez?\""
+          "\"¿Me comentas una vez corregido?\""
         ],
         "no": [
           "Aparecer solo cuando hay un problema en la línea.",
           "Resolver por el líder lo que él debe acompañar con su equipo.",
           "Corregir en público frente al equipo.",
           "Dejar pasar una falta de EPP.",
-          "Tratar el turno noche como turno de segunda.",
-          "Generalizar (\"siempre haces…\") en vez de nombrar un hecho concreto."
+          "Tratar el turno noche como turno de segunda."
         ],
         "registro": {
           "hidden": true
@@ -1304,7 +1294,7 @@ Object.assign(window.PROFILES, {
         "icon": "message-square-quote",
         "title": "Acompañamiento 1 a 1",
         "freq": "Diario (ambos turnos)",
-        "purpose": "Acompañar a la línea en el momento con CIA (Comportamiento · Impacto · Acuerdo): ante la duda, medir con muestreo (no buscar culpables), mostrar la evidencia y acordar juntos la corrección; la seguridad no se negocia.",
+        "purpose": "Acompañar a la línea en el momento: ante la duda, medir con muestreo (no buscar culpables) y corregir con evidencia; la seguridad no se negocia.",
         "context": {
           "freq": "Diario (ambos turnos)",
           "place": "En la línea durante el turno"
@@ -1324,34 +1314,24 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Muestro la evidencia",
-            "t": "con CIA: \"El muestreo muestra [mencionar comportamiento o problema]. Esto genera [mencionar impacto].\""
-          },
-          {
-            "k": "Acordamos",
-            "t": "invito a reflexionar (\"¿Qué haríamos distinto?\") y acordamos juntos dónde poner foco."
+            "t": "comparto el resultado y pido corregir donde el dato lo señala."
           },
           {
             "k": "En seguridad, no negocio",
             "t": "si falta un EPP, lo corrijo en el momento: \"por tu seguridad y bienestar\"."
-          },
-          {
-            "k": "Vuelvo",
-            "t": "hago un nuevo muestreo para verificar que la corrección se sostiene."
           }
         ],
         "phrases": [
           "\"Veo que están pasando algunos [defectos]. No busco un responsable, quiero entender qué pasa.\"",
           "\"¿Les parece si hago un muestreo para revisar la línea completa?\"",
           "\"El muestreo confirma que están pasando defectos en varios puntos; retiremos con mayor atención.\"",
-          "\"Te pido que uses tu EPP por tu propia seguridad y bienestar. No ejecutamos labores sin EPP.\"",
-          "\"¿Qué haríamos distinto para que no se escape el defecto?\""
+          "\"Te pido que uses tu EPP por tu propia seguridad y bienestar. No ejecutamos labores sin EPP.\""
         ],
         "no": [
           "Buscar culpables antes de medir.",
           "Discutir opiniones en vez de mostrar el dato del muestreo.",
           "Exponer a una persona al corregir frente al grupo.",
-          "Dejar pasar una falta de EPP.",
-          "Generalizar (\"siempre haces…\") en vez de nombrar un hecho concreto."
+          "Dejar pasar una falta de EPP."
         ],
         "registro": {
           "hidden": true
