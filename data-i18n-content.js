@@ -5,6 +5,10 @@
    ============================================================ */
 window.CONTENT_TR = {
 "en": {
+"\"Eso no lo gestiono yo, revisaré cómo solucionarlo y volveré con una respuesta.\"": "\"That's not something I handle, but I'll look into how to solve it and come back with an answer.\"",
+"\"Antes de arrancar, ¿algo que necesiten que sepa o en lo que pueda ayudar?\"": "\"Before we start, is there anything you need me to know or that I can help with?\"",
+"\"Que sostengan la calidad calmando a la gente y reduciendo la tensión es justo lo que vengo a reconocer.\"": "\"That you uphold quality while calming people down and reducing tension is exactly what I came to recognize.\"",
+"\"Sostener esa conversación calmando a la gente y reduciendo la tensión fue clave. Lo vi.\"": "\"Holding that conversation while calming people down and reducing tension was key. I saw it.\"",
 "\"Veo que [mencionar comportamiento o problema]. Esto genera [mencionar impacto], y esa calificación es la calidad que le llega al cliente.\"": "\"I see that [mencionar comportamiento o problema]. This causes [mencionar impacto], and that rating is the quality that reaches the customer.\"",
 "\"¿Me repites qué acordamos para asegurarnos de que quedó claro?\"": "\"Can you tell me back what we agreed, so we make sure it's clear?\"",
 "\"¿Qué haríamos distinto para que no se escape el defecto?\"": "\"What would we do differently so the defect doesn't slip through?\"",
@@ -737,6 +741,10 @@ window.CONTENT_TR = {
 "Se registra la problemática, pero es MUY IMPORTANTE que contactes a Atención al Trabajador (992 890 000).": "The issue is logged, but it's VERY IMPORTANT that you contact Worker Support (992 890 000)."
 },
 "pt": {
+"\"Eso no lo gestiono yo, revisaré cómo solucionarlo y volveré con una respuesta.\"": "\"Isso não é algo que eu gerencio, mas vou ver como resolver e voltarei com uma resposta.\"",
+"\"Antes de arrancar, ¿algo que necesiten que sepa o en lo que pueda ayudar?\"": "\"Antes de começar, algo que precisem que eu saiba ou em que eu possa ajudar?\"",
+"\"Que sostengan la calidad calmando a la gente y reduciendo la tensión es justo lo que vengo a reconocer.\"": "\"Que vocês sustentem a qualidade acalmando as pessoas e reduzindo a tensão é justamente o que venho reconhecer.\"",
+"\"Sostener esa conversación calmando a la gente y reduciendo la tensión fue clave. Lo vi.\"": "\"Sustentar essa conversa acalmando as pessoas e reduzindo a tensão foi fundamental. Eu vi.\"",
 "\"Veo que [mencionar comportamiento o problema]. Esto genera [mencionar impacto], y esa calificación es la calidad que le llega al cliente.\"": "\"Vejo que [mencionar comportamiento o problema]. Isso gera [mencionar impacto], e essa classificação é a qualidade que chega ao cliente.\"",
 "\"¿Me repites qué acordamos para asegurarnos de que quedó claro?\"": "\"Você me repete o que combinamos, para termos certeza de que ficou claro?\"",
 "\"¿Qué haríamos distinto para que no se escape el defecto?\"": "\"O que faríamos diferente para que o defeito não passe?\"",
@@ -1469,6 +1477,10 @@ window.CONTENT_TR = {
 "Se registra la problemática, pero es MUY IMPORTANTE que contactes a Atención al Trabajador (992 890 000).": "A problemática é registrada, mas é MUITO IMPORTANTE que você entre em contato com o Atendimento ao Trabalhador (992 890 000)."
 },
 "fr": {
+"\"Eso no lo gestiono yo, revisaré cómo solucionarlo y volveré con una respuesta.\"": "\"Ce n'est pas moi qui gère cela, mais je vais voir comment le résoudre et je reviendrai avec une réponse.\"",
+"\"Antes de arrancar, ¿algo que necesiten que sepa o en lo que pueda ayudar?\"": "\"Avant de commencer, y a-t-il quelque chose que je dois savoir ou pour lequel je peux aider ?\"",
+"\"Que sostengan la calidad calmando a la gente y reduciendo la tensión es justo lo que vengo a reconocer.\"": "\"Que vous mainteniez la qualité en calmant les gens et en réduisant la tension, c'est exactement ce que je viens reconnaître.\"",
+"\"Sostener esa conversación calmando a la gente y reduciendo la tensión fue clave. Lo vi.\"": "\"Tenir cette conversation en calmant les gens et en réduisant la tension a été essentiel. Je l'ai vu.\"",
 "\"Veo que [mencionar comportamiento o problema]. Esto genera [mencionar impacto], y esa calificación es la calidad que le llega al cliente.\"": "\"Je vois que [mencionar comportamiento o problema]. Cela génère [mencionar impacto], et cette note, c'est la qualité qui arrive au client.\"",
 "\"¿Me repites qué acordamos para asegurarnos de que quedó claro?\"": "\"Tu peux me répéter ce que nous avons convenu, pour être sûrs que c'est clair ?\"",
 "\"¿Qué haríamos distinto para que no se escape el defecto?\"": "\"Que ferions-nous différemment pour que le défaut ne passe plus ?\"",
@@ -2201,6 +2213,10 @@ window.CONTENT_TR = {
 "Se registra la problemática, pero es MUY IMPORTANTE que contactes a Atención al Trabajador (992 890 000).": "La problématique est enregistrée, mais il est TRÈS IMPORTANT que tu contactes le Service d'Assistance au Travailleur (992 890 000)."
 },
 "ar": {
+"\"Eso no lo gestiono yo, revisaré cómo solucionarlo y volveré con una respuesta.\"": "\"هذا ليس من صلاحياتي، لكنني سأبحث في كيفية حلّه وسأعود إليكم بإجابة.\"",
+"\"Antes de arrancar, ¿algo que necesiten que sepa o en lo que pueda ayudar?\"": "\"قبل أن نبدأ، هل هناك ما تحتاجون أن أعرفه أو ما يمكنني المساعدة فيه؟\"",
+"\"Que sostengan la calidad calmando a la gente y reduciendo la tensión es justo lo que vengo a reconocer.\"": "\"أن تحافظوا على الجودة مع تهدئة الناس وتخفيف التوتر هو بالضبط ما جئت لأقدّره.\"",
+"\"Sostener esa conversación calmando a la gente y reduciendo la tensión fue clave. Lo vi.\"": "\"إدارة تلك المحادثة مع تهدئة الناس وتخفيف التوتر كانت أمرًا حاسمًا. لقد رأيت ذلك.\"",
 "\"Veo que [mencionar comportamiento o problema]. Esto genera [mencionar impacto], y esa calificación es la calidad que le llega al cliente.\"": "\"أرى أن [mencionar comportamiento o problema]. وهذا يؤدي إلى [mencionar impacto]، وهذا التقييم هو الجودة التي تصل إلى العميل.\"",
 "\"¿Me repites qué acordamos para asegurarnos de que quedó claro?\"": "\"هل تعيد لي ما اتفقنا عليه لنتأكد من أن الأمر واضح؟\"",
 "\"¿Qué haríamos distinto para que no se escape el defecto?\"": "\"ما الذي سنفعله بشكل مختلف حتى لا يمرّ العيب؟\"",

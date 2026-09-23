@@ -160,7 +160,7 @@ Object.assign(window.PROFILES, {
         ],
         "phrases": [
           "\"Vine a ver de cómo va todo, cómo se sienten, no a revisar muestreos.\"",
-          "\"Que sostengan la calidad sin escalar el conflicto es justo lo que vengo a reconocer.\"",
+          "\"Que sostengan la calidad calmando a la gente y reduciendo la tensión es justo lo que vengo a reconocer.\"",
           "\"Esto que me cuentas lo reviso y te traigo respuesta esta semana.\""
         ],
         "no": [
@@ -439,7 +439,7 @@ Object.assign(window.PROFILES, {
           "\"Vi [comportamiento o problema]. Eso generó [impacto]. ¿Qué acuerdo tomamos?\"",
           "“Lo que mejor vi este mes fue [comportamiento], que generó [impacto]. Quiero que sepas que lo valoro.”",
           "\"Hablemos de cómo manejaste el roce con operaciones, no del resultado del muestreo.\"",
-          "\"Sostener esa conversación sin escalar el conflicto fue clave. Lo vi.\"",
+          "\"Sostener esa conversación calmando a la gente y reduciendo la tensión fue clave. Lo vi.\"",
           "\"¿Qué necesitas de mí para que esa fricción no te consuma?\""
         ],
         "no": [
@@ -515,7 +515,7 @@ Object.assign(window.PROFILES, {
         "phrases": [
           "\"¿Cómo viene la semana? ¿Algo antes de arrancar?\"",
           "\"Ese tema lo resuelvo yo. Te confirmo el viernes.\"",
-          "\"Eso no está en mis manos. Lo escalo a mi jefe — vuelvo con respuesta.\"",
+          "\"Eso no lo gestiono yo, revisaré cómo solucionarlo y volveré con una respuesta.\"",
           "\"La semana pasada [nombre] planteó [tema]. Así quedó.\""
         ],
         "no": [
@@ -719,7 +719,7 @@ Object.assign(window.PROFILES, {
           "\"Vi [comportamiento o problema]. Eso generó [impacto]. ¿Qué acuerdo tomamos?\"",
           "“Lo que mejor vi este mes fue [comportamiento], que generó [impacto]. Quiero que sepas que lo valoro.”",
           "\"Hablemos de cómo manejaste el roce con operaciones, no del resultado del muestreo.\"",
-          "\"Sostener esa conversación sin escalar el conflicto fue clave. Lo vi.\"",
+          "\"Sostener esa conversación calmando a la gente y reduciendo la tensión fue clave. Lo vi.\"",
           "\"¿Qué necesitas de mí para que esa fricción no te consuma?\""
         ],
         "no": [
@@ -795,7 +795,7 @@ Object.assign(window.PROFILES, {
         "phrases": [
           "\"¿Cómo viene la semana? ¿Algo que necesite saber?\"",
           "\"Ese tema lo veo yo — te aviso mañana.\"",
-          "\"Eso no está en mis manos. Lo escalo a mi jefe — vuelvo esta semana.\"",
+          "\"Eso no lo gestiono yo, revisaré cómo solucionarlo y volveré con una respuesta.\"",
           "\"El lunes [nombre] planteó [tema]. Así quedó.\""
         ],
         "no": [
@@ -1090,7 +1090,7 @@ Object.assign(window.PROFILES, {
           }
         ],
         "phrases": [
-          "\"Antes de arrancar, ¿algo que necesiten que sepa o que tenga que escalar?\"",
+          "\"Antes de arrancar, ¿algo que necesiten que sepa o en lo que pueda ayudar?\"",
           "\"Ese tema lo resuelvo yo en este turno. Te aviso antes del cierre.\"",
           "\"No está en mis manos. Lo subo ahora — mañana te traigo respuesta.\"",
           "\"Ayer [nombre] planteó [tema]. Lo resolví / llega el [día].\""
