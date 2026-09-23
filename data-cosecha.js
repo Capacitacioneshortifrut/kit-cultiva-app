@@ -621,7 +621,7 @@ window.PROFILES = {
         "phrases": [
           "\"¿Cómo viene la semana? ¿Algo antes de arrancar?\"",
           "\"Ese tema lo resuelvo yo. Te confirmo el viernes.\"",
-          "\"Eso no está en mis manos. Lo escalo a mi jefe — vuelvo con respuesta.\"",
+          "\"Eso no lo gestiono yo, revisaré cómo solucionarlo y volveré con una respuesta.\"",
           "\"La semana pasada [nombre] planteó [tema]. Así quedó.\""
         ],
         "no": [
@@ -928,7 +928,7 @@ window.PROFILES = {
         "phrases": [
           "\"¿Hay algo que deba conocer antes de iniciar labores? ¿Cómo van con su personal?\"",
           "\"Ese tema lo veo yo — te aviso mañana.\"",
-          "\"Eso no está en mis manos. Lo escalo — vuelvo esta semana.\""
+          "\"Eso no lo gestiono yo, revisaré cómo solucionarlo y volveré con una respuesta.\""
         ],
         "no": [
           "Prometer a tu equipo lo que no puedes cumplir.",

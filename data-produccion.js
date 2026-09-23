@@ -578,7 +578,7 @@ Object.assign(window.PROFILES, {
         "phrases": [
           "\"¿Cómo viene la semana? ¿Algo antes de arrancar?\"",
           "\"Ese tema lo resuelvo yo. Te confirmo el viernes.\"",
-          "\"Eso no está en mis manos. Lo escalo a mi jefe — vuelvo con respuesta.\"",
+          "\"Eso no lo gestiono yo, revisaré cómo solucionarlo y volveré con una respuesta.\"",
           "\"La semana pasada [nombre] planteó [tema]. Así quedó.\""
         ],
         "no": [
