@@ -277,20 +277,19 @@ function CultivaRegistroForm({ ritual, profileId, user, escalateTo }) {
           rh("input", {
             id: idAttr, autoComplete: "off",
             className: "fld-ctrl" + (bad ? " err" : ""),
-            value: repQuery, placeholder: ph, disabled: !hasRep,
-            onChange: (e) => { setRepQuery(e.target.value); setField(f.k, ""); setRepOpen(true); },
+            value: repQuery, placeholder: ph,
+            // texto libre: la lista es solo una sugerencia (aún no todo el equipo está en el padrón)
+            onChange: (e) => { setRepQuery(e.target.value); setField(f.k, e.target.value.trim()); setRepOpen(true); },
             onFocus: () => setRepOpen(true),
             onBlur: () => setTimeout(() => setRepOpen(false), 160),
           }),
-          chosen ? RI("check", "fld-sel-ico") : RI("search", "fld-sel-ico"),
+          (chosen && reportes.some((r) => r.nombre === chosen)) ? RI("check", "fld-sel-ico") : RI("search", "fld-sel-ico"),
         ),
-        (repOpen && hasRep) ? rh("div", { className: "combo-list" },
-          filtered.length
-            ? filtered.slice(0, 60).map((r) => rh("button", {
-                key: r.legajo || r.nombre, type: "button", className: "combo-item",
-                onMouseDown: () => { setField(f.k, r.nombre); setRepQuery(r.nombre); setRepOpen(false); },
-              }, r.nombre))
-            : rh("div", { className: "combo-empty" }, RT("form.noMatch"))
+        (repOpen && hasRep && filtered.length) ? rh("div", { className: "combo-list" },
+          filtered.slice(0, 60).map((r) => rh("button", {
+            key: r.legajo || r.nombre, type: "button", className: "combo-item",
+            onMouseDown: () => { setField(f.k, r.nombre); setRepQuery(r.nombre); setRepOpen(false); },
+          }, r.nombre))
         ) : null,
       );
     } else if (f.t === "area") {
