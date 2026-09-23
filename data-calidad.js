@@ -200,11 +200,11 @@ Object.assign(window.PROFILES, {
         "icon": "ear",
         "title": "Espacio de confianza",
         "freq": "Semanal",
-        "purpose": "Recoger inquietudes antes de que se conviertan en problemas, fomentar la comunicación, cercanía y espacios seguros.",
+        "purpose": "Recoger las inquietudes del equipo antes de que se conviertan en problemas y darles seguimiento.",
         "steps": [
           {
             "k": "Abro",
-            "t": "\"¿Algo que necesiten que escuche antes de empezar?\""
+            "t": "Abro con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
           },
           {
             "k": "Espero",
@@ -212,15 +212,19 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Escucho",
-            "t": "Sin interrumpir. Si nadie habla: \"¿Cómo vienen hoy?\""
+            "t": "Escucho sin interrumpir el tema que traen."
           },
           {
-            "k": "Retengo",
-            "t": "Me quedo con el tema y su contexto para darle seguimiento."
+            "k": "Explico el porqué",
+            "t": "Comparto el contexto o la información que ayude a entender el tema."
+          },
+          {
+            "k": "Decido",
+            "t": "Decido con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
           },
           {
             "k": "Doy cierre",
-            "t": "Para cada tema:\n• Si puedo resolverlo: defino la acción y establezco la urgencia (Hoy / Esta semana).\n• Si no puedo resolverlo: marco \"No resuelvo yo\", agradezco su apertura y le brindo una orientación sobre qué hacer."
+            "t": "Al día siguiente doy respuesta a las consultas pendientes."
           }
         ],
         "phrases": [
@@ -230,9 +234,8 @@ Object.assign(window.PROFILES, {
           "\"La semana pasada [nombre] planteó [tema]. Esto es lo que se decidió.\""
         ],
         "no": [
-          "Escuchar sin dar seguimiento — si el tema no se atiende, se repite.",
-          "Prometer respuesta sin fecha.",
-          "No cerrar el loop la siguiente semana con quien lo trajo."
+          "Prometer a tu equipo lo que no puedes cumplir.",
+          "No dejar sin respuesta a quien habló contigo."
         ],
         "context": {
           "freq": "Semanal",
@@ -328,7 +331,7 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Nombro",
-            "t": "en el momento oportuno: \"[Nombre], te felicito por [conducta], eso nos ayudó en [impacto].\""
+            "t": "en el momento oportuno: \"[Nombre], te felicito por [mencionar conducta], eso nos ayudó en [mencionar impacto].\""
           }
         ],
         "phrases": [
@@ -469,14 +472,14 @@ Object.assign(window.PROFILES, {
         "icon": "ear",
         "title": "Espacio de confianza",
         "freq": "Semanal",
-        "purpose": "Recoger inquietudes antes de que se conviertan en problemas, fomentar la comunicación, cercanía y espacios seguros.",
+        "purpose": "Recoger las inquietudes del equipo antes de que se conviertan en problemas y darles seguimiento.",
         "context": {
           "when": "En espacios ya programados o existentes con tus reportes directos"
         },
         "steps": [
           {
             "k": "Abro",
-            "t": "\"¿Algo que necesiten que escuche antes de empezar?\""
+            "t": "Abro con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
           },
           {
             "k": "Espero",
@@ -484,15 +487,19 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Escucho",
-            "t": "Sin interrumpir. Si nadie habla: \"¿Cómo vienen hoy?\""
+            "t": "Escucho sin interrumpir el tema que traen."
           },
           {
-            "k": "Retengo",
-            "t": "Me quedo con el tema y su contexto para darle seguimiento."
+            "k": "Explico el porqué",
+            "t": "Comparto el contexto o la información que ayude a entender el tema."
+          },
+          {
+            "k": "Decido",
+            "t": "Decido con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
           },
           {
             "k": "Doy cierre",
-            "t": "Para cada tema:\n• Si puedo resolverlo: defino la acción y establezco la urgencia (Hoy / Esta semana).\n• Si no puedo resolverlo: marco \"No resuelvo yo\", agradezco su apertura y le brindo una orientación sobre qué hacer."
+            "t": "Al día siguiente doy respuesta a las consultas pendientes."
           }
         ],
         "phrases": [
@@ -502,9 +509,8 @@ Object.assign(window.PROFILES, {
           "\"La semana pasada [nombre] planteó [tema]. Así quedó.\""
         ],
         "no": [
-          "Convertir el espacio en un reporte técnico del día.",
-          "Escalar a mi jefe sin haber intentado resolverlo primero.",
-          "No devolver la respuesta a quien lo trajo."
+          "Prometer a tu equipo lo que no puedes cumplir.",
+          "No dejar sin respuesta a quien habló contigo."
         ],
         "registro": {
           "soporte": "Registro vía app",
@@ -602,7 +608,7 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Nombro",
-            "t": "en el momento oportuno: \"[Nombre], te felicito por [conducta], eso nos ayudó en [impacto].\""
+            "t": "en el momento oportuno: \"[Nombre], te felicito por [mencionar conducta], eso nos ayudó en [mencionar impacto].\""
           }
         ],
         "phrases": [
@@ -745,34 +751,34 @@ Object.assign(window.PROFILES, {
         "icon": "ear",
         "title": "Espacio de confianza",
         "freq": "Semanal",
-        "purpose": "Recoger inquietudes antes de que se conviertan en problemas, fomentar la comunicación, cercanía y espacios seguros.",
+        "purpose": "Recoger las inquietudes del equipo antes de que se conviertan en problemas y darles seguimiento.",
         "context": {
           "when": "En espacios ya programados o existentes con tus reportes directos"
         },
         "steps": [
           {
             "k": "Abro",
-            "t": "\"Cómo están?\" \"¿Algo que necesiten conversar antes de empezar?\""
+            "t": "Abro con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
           },
           {
             "k": "Espero",
-            "t": "20-30 seg en silencio — la gente no responde de inmediato."
+            "t": "20-30 segundos en silencio; la gente no responde de inmediato."
           },
           {
             "k": "Escucho",
-            "t": "sin interrumpir. Si nadie habla: \"¿Cómo vienen hoy?\""
+            "t": "Escucho sin interrumpir el tema que traen."
           },
           {
-            "k": "Resuelvo",
-            "t": "fomentando confianza y apertura"
+            "k": "Explico el porqué",
+            "t": "Comparto el contexto o la información que ayude a entender el tema."
           },
           {
-            "k": "Retengo",
-            "t": "Me quedo con la situación y su urgencia (Hoy / Esta semana) para darle seguimiento."
+            "k": "Decido",
+            "t": "Decido con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
           },
           {
             "k": "Doy cierre",
-            "t": "al día siguiente: \"Ayer [nombre] planteó [tema]. [Lo resolví / llega el día X].\""
+            "t": "Al día siguiente doy respuesta a las consultas pendientes."
           }
         ],
         "phrases": [
@@ -783,8 +789,7 @@ Object.assign(window.PROFILES, {
         ],
         "no": [
           "Prometer a tu equipo lo que no puedes cumplir.",
-          "Escalar a mi jefe sin contexto — no puede actuar sobre algo que no entiende.",
-          "No cerrar el loop con quien lo trajo."
+          "No dejar sin respuesta a quien habló contigo."
         ],
         "registro": {
           "soporte": "Registro vía app",
@@ -887,7 +892,7 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Nombro",
-            "t": "en el momento oportuno frente al grupo: \"[Nombre], te felicito por [conducta] — eso nos ayudó en [impacto].\""
+            "t": "en el momento oportuno frente al grupo: \"[Nombre], te felicito por [mencionar conducta] — eso nos ayudó en [mencionar impacto].\""
           }
         ],
         "phrases": [
@@ -1042,7 +1047,7 @@ Object.assign(window.PROFILES, {
         "icon": "ear",
         "title": "Espacio de confianza",
         "freq": "Diario (ambos turnos)",
-        "purpose": "Recoger inquietudes antes de que se conviertan en problemas — y escalar con criterio.",
+        "purpose": "Recoger las inquietudes del equipo antes de que se conviertan en problemas y darles seguimiento.",
         "context": {
           "when": "Al inicio de turno",
           "place": "Post-charla operativa"
@@ -1050,27 +1055,27 @@ Object.assign(window.PROFILES, {
         "steps": [
           {
             "k": "Abro",
-            "t": "\"¿Algo que necesiten que escuche antes de empezar?\""
+            "t": "Abro con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
           },
           {
             "k": "Espero",
-            "t": "20-30 seg en silencio — la gente no responde de inmediato."
+            "t": "20-30 segundos en silencio; la gente no responde de inmediato."
           },
           {
             "k": "Escucho",
-            "t": "sin interrumpir. Si nadie habla: \"¿Cómo vienen hoy?\""
+            "t": "Escucho sin interrumpir el tema que traen."
+          },
+          {
+            "k": "Explico el porqué",
+            "t": "Comparto el contexto o la información que ayude a entender el tema."
           },
           {
             "k": "Decido",
-            "t": "para cada tema: ¿resuelvo yo o escalo?"
-          },
-          {
-            "k": "Retengo",
-            "t": "Me quedo con la situación y su urgencia (Hoy / Esta semana) para darle seguimiento."
+            "t": "Decido con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
           },
           {
             "k": "Doy cierre",
-            "t": "al día siguiente: \"Ayer [nombre] planteó [tema]. [Lo resolví / llega el día X].\""
+            "t": "Al día siguiente doy respuesta a las consultas pendientes."
           }
         ],
         "phrases": [
@@ -1080,9 +1085,8 @@ Object.assign(window.PROFILES, {
           "\"Ayer [nombre] planteó [tema]. Lo resolví / llega el [día].\""
         ],
         "no": [
-          "Prometer lo que no puedes cumplir.",
-          "Escalar sin escribir contexto suficiente — el superior no puede actuar sobre algo que no entiende.",
-          "No cerrar el loop al día siguiente con quien habló."
+          "Prometer a tu equipo lo que no puedes cumplir.",
+          "No dejar sin respuesta a quien habló contigo."
         ],
         "registro": {
           "soporte": "Escalada vía app",
@@ -1370,7 +1374,7 @@ Object.assign(window.PROFILES, {
         "purpose": "Reconocer de forma sincera al grupo de cosecha con mejores resultados, valorando su trabajo y destacando cómo su esfuerzo impacta en los resultados.",
         "context": {
           "freq": "Semanal",
-          "when": "En grupo o 1:1",
+          "when": "En grupo",
           "place": "Al inicio o al cierre"
         },
         "steps": [
@@ -1418,8 +1422,8 @@ Object.assign(window.PROFILES, {
           "fields": [
             {
               "k": "reconozco",
-              "l": "Reconozco a",
-              "t": "reportes",
+              "l": "Menciona el nombre de quién está liderando la cuadrilla, fundo y lote",
+              "t": "text",
               "req": true
             }
           ]

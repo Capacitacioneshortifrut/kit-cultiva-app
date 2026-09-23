@@ -202,7 +202,7 @@ window.UI_STRINGS = {
     "escst.derivo": "Escalado · derivado",
     "escst.escalo": "Escalado · subió más arriba",
     "mtr.recordedNoDetail": "Registrado (sin detalle).",
-    "escucha.warning": "Da seguimiento a los temas que se comenten aquí. Si surge algo que deba escalarse, tú eres el contacto principal para darle seguimiento y respuesta.",
+    "escucha.warning": "Da seguimiento a los temas que se comenten aquí: tú eres el contacto principal para darles respuesta. No dejes sin respuesta a quien habló contigo.",
     "escucha.warnTitle": "Recordatorio"
   },
   "en": {
@@ -404,7 +404,7 @@ window.UI_STRINGS = {
     "escst.derivo": "Escalated · handed off",
     "escst.escalo": "Escalated · went further up",
     "mtr.recordedNoDetail": "Logged (no details).",
-    "escucha.warning": "Follow up on the topics discussed here. If something comes up that needs escalating, you are the main point of contact to follow it through and respond.",
+    "escucha.warning": "Follow up on the topics raised here: you are the main point of contact to respond. Don't leave anyone who spoke with you without an answer.",
     "escucha.warnTitle": "Reminder"
   },
   "pt": {
@@ -606,7 +606,7 @@ window.UI_STRINGS = {
     "escst.derivo": "Escalado · encaminhado",
     "escst.escalo": "Escalado · subiu mais acima",
     "mtr.recordedNoDetail": "Registrado (sem detalhe).",
-    "escucha.warning": "Acompanhe os temas conversados aqui. Se surgir algo que precise ser escalado, você é o contato principal para dar seguimento e resposta.",
+    "escucha.warning": "Acompanhe os temas conversados aqui: você é o contato principal para dar resposta. Não deixe sem resposta quem falou com você.",
     "escucha.warnTitle": "Lembrete"
   },
   "fr": {
@@ -808,7 +808,7 @@ window.UI_STRINGS = {
     "escst.derivo": "Escaladé · transféré",
     "escst.escalo": "Escaladé · remonté plus haut",
     "mtr.recordedNoDetail": "Enregistré (sans détail).",
-    "escucha.warning": "Assure le suivi des sujets abordés ici. Si quelque chose doit être remonté, tu es le contact principal pour en assurer le suivi et la réponse.",
+    "escucha.warning": "Assure le suivi des sujets abordés ici : tu es le contact principal pour y répondre. Ne laisse personne qui t'a parlé sans réponse.",
     "escucha.warnTitle": "Rappel"
   },
   "ar": {
@@ -1010,7 +1010,7 @@ window.UI_STRINGS = {
     "escst.derivo": "تم التصعيد · تمت الإحالة",
     "escst.escalo": "تم التصعيد · رُفع إلى مستوى أعلى",
     "mtr.recordedNoDetail": "تم التسجيل (دون تفاصيل).",
-    "escucha.warning": "تابِع المواضيع التي تُطرح هنا. وإذا ظهر ما يستدعي التصعيد، فأنت جهة الاتصال الرئيسية لمتابعته والرد عليه.",
+    "escucha.warning": "تابِع المواضيع التي تُطرح هنا: أنت جهة الاتصال الرئيسية للرد عليها. لا تترك من تحدّث معك دون رد.",
     "escucha.warnTitle": "تذكير"
   }
 };

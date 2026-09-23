@@ -456,7 +456,7 @@ function Detail({ profile, ritual, user, onBack, onEscaladas }) {
             // escaladas): recordatorio de que son el punto de contacto. Plegable: abierto
             // al entrar, se puede minimizar para no saturar la vista.
             (esEspacioConfianza && teniaEscaladas) ? h("div", {
-              style: { background: "#FBECEA", border: "1px solid #Eed0cb", borderRadius: "12px", margin: "0 0 12px", color: "#9A3B31", overflow: "hidden" },
+              style: { background: "#FDF4D9", border: "1px solid #F0DCA0", borderRadius: "12px", margin: "0 0 12px", color: "#8A5A12", overflow: "hidden" },
             },
               h("button", {
                 type: "button", onClick: () => setAvisoOpen(!avisoOpen),
