@@ -1059,7 +1059,7 @@ window.PROFILES = {
         "icon": "message-square-quote",
         "title": "Acompañamiento 1 a 1",
         "freq": "Diario",
-        "purpose": "Construir autoridad desde la relación: presencia visible que reconoce primero el avance, ajusta el detalle con CIA (Comportamiento · Impacto · Acuerdo) y explica siempre el porqué.",
+        "purpose": "Construir autoridad desde la relación: presencia visible que reconoce primero el avance y luego ajusta el detalle, explicando siempre el porqué.",
         "context": {
           "freq": "Diario",
           "place": "En el campo"
@@ -1071,48 +1071,32 @@ window.PROFILES = {
           },
           {
             "k": "Observo",
-            "t": "cómo cosecha cada persona; quién avanza bien, quién necesita un ajuste."
+            "t": "cómo cosecha cada persona; quién avanza bien, quién parece cansado."
           },
           {
             "k": "Reconozco primero",
-            "t": "nombro lo positivo: \"Vi que [mencionar comportamiento]. Eso está bien hecho.\""
+            "t": "nombro lo positivo: \"Vi que [comportamiento]. Eso está bien hecho.\""
           },
           {
             "k": "Ajusto el detalle",
-            "t": "con amabilidad y en privado: \"Solo veo [mencionar comportamiento o problema]. Esto genera [mencionar impacto].\""
+            "t": "con amabilidad: \"Solo veo [defecto]; ¿lo retiramos y lo colocamos en el pote de descarte?\""
           },
           {
             "k": "Explico el porqué",
-            "t": "conecto la calidad con el cliente, con más trabajo para el equipo y con sus utilidades."
-          },
-          {
-            "k": "Pregunto",
-            "t": "invito a reflexionar: \"¿Qué harías tú distinto?\""
-          },
-          {
-            "k": "Acordamos",
-            "t": "construimos juntos el acuerdo (por ejemplo, retirar lo que va al pote de descarte y revisar antes de avanzar) y confirmo que quedó claro."
-          },
-          {
-            "k": "Vuelvo",
-            "t": "paso a verificar en los próximos días y reconozco cuando mejora."
+            "t": "conecto la calidad con el cliente, con más trabajo para el equipo y con las utilidades."
           }
         ],
         "phrases": [
           "\"Veo que vienes avanzando muy bien. ¡Eso es muy bueno!\"",
           "\"Solo veo [defecto] en la jaba. ¿Te parece si lo retiramos al pote de descarte?\"",
           "\"Mientras mejor cosechemos, la fruta llega con la calidad que el cliente requiere: eso significa más trabajo para todos y se refleja en tus utilidades.\"",
-          "\"Un momento — quiero decirte algo en privado.\"",
-          "\"¿Qué harías tú distinto la próxima vez?\"",
-          "\"¿Me repites qué acordamos para asegurarnos de que quedó claro?\""
+          "\"Un momento — quiero decirte algo en privado.\""
         ],
         "no": [
           "Aparecer solo cuando hay un problema (eso lo convierte en ronda de control).",
           "Corregir en público frente al grupo.",
           "Corregir sin reconocer primero el avance.",
-          "Recorrer siempre el mismo sector o las mismas personas.",
-          "Generalizar (\"siempre haces…\") en vez de nombrar un hecho concreto.",
-          "Dar la charla y no volver a verificar lo acordado."
+          "Recorrer siempre el mismo sector o las mismas personas."
         ],
         "registro": {
           "hidden": true

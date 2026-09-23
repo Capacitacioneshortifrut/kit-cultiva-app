@@ -1016,7 +1016,7 @@ Object.assign(window.PROFILES, {
         "icon": "message-square-quote",
         "title": "Acompañamiento 1 a 1",
         "freq": "Diario",
-        "purpose": "Acompañar en el momento con CIA (Comportamiento · Impacto · Acuerdo): reconocer el avance, señalar la desviación puntual explicando el porqué, construir juntos la corrección y volver a verificar.",
+        "purpose": "Acompañar en el momento: reconocer el avance, señalar la desviación puntual explicando el porqué, pedir compromiso de corrección y verificar que se haga.",
         "context": {
           "freq": "Diario",
           "when": "En movimiento por el área durante la jornada"
@@ -1028,27 +1028,19 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Señalo la desviación puntual",
-            "t": "concreta y sin rodeos: \"Veo que [mencionar comportamiento o problema]. Esto genera [mencionar impacto].\""
+            "t": "concreta y sin rodeos: \"Veo que [desviación].\""
           },
           {
             "k": "Explico el porqué",
             "t": "el impacto técnico (plagas, nutrientes, deshidratación de la fruta, enfermedades, etc.)."
           },
           {
-            "k": "Pregunto",
-            "t": "invito a reflexionar: \"¿Qué harías tú distinto?\""
+            "k": "Pido compromiso",
+            "t": "\"¿Cuento contigo con esa corrección?\" / \"¿Te parece si lo corregimos de inmediato?\""
           },
           {
-            "k": "Acordamos",
-            "t": "construimos juntos la corrección: \"¿Cuento contigo con esa corrección?\""
-          },
-          {
-            "k": "Cierro",
-            "t": "reconozco el compromiso y pido que me avisen al corregir."
-          },
-          {
-            "k": "Vuelvo",
-            "t": "paso a verificar en los próximos días."
+            "k": "Verifico",
+            "t": "pido que me avisen al corregir o anuncio que volveré a revisar el trabajo."
           }
         ],
         "phrases": [
@@ -1056,15 +1048,13 @@ Object.assign(window.PROFILES, {
           "\"Recuerda que [impacto técnico]: por eso [acción correcta].\"",
           "\"¿Cuento contigo con esa corrección?\"",
           "\"Corrige esto y avísame apenas lo hayas hecho, ¿te parece?\"",
-          "\"Volveré en unos minutos para ver tu trabajo, ¿te parece?\"",
-          "\"¿Qué harías tú distinto la próxima vez?\""
+          "\"Volveré en unos minutos para ver tu trabajo, ¿te parece?\""
         ],
         "no": [
           "Aparecer solo cuando hay un problema (eso lo convierte en ronda de control).",
           "Señalar la desviación sin explicar el porqué.",
           "Corregir en público frente al grupo.",
-          "No verificar que la corrección se haya hecho.",
-          "Generalizar (\"siempre haces…\") en vez de nombrar un hecho concreto."
+          "No verificar que la corrección se haya hecho."
         ],
         "registro": {
           "hidden": true
