@@ -799,7 +799,8 @@ window.PROFILES = {
           "\"Entiendo que lo comunicaste, pero ¿te aseguraste de que se cumpliera?\"",
           "\"Este problema genera [impacto en la operación]. Te pido que lo soluciones de inmediato.\"",
           "\"¿Cómo podemos evitar que esta situación se repita?\"",
-          "\"No basta con comunicar, hay que verificar.\""
+          "\"No basta con comunicar, hay que verificar.\"",
+          "\"Te pido que hagas acompañamiento 1 a 1 con tu gente; muchas veces necesitan que les recuerdes cómo se hace.\""
         ],
         "no": [
           "Quedarse en \"ya lo comuniqué\" sin verificar el cumplimiento.",
@@ -926,7 +927,6 @@ window.PROFILES = {
         ],
         "phrases": [
           "\"¿Hay algo que deba conocer antes de iniciar labores? ¿Cómo van con su personal?\"",
-          "\"Te pido que hagas acompañamiento 1 a 1 con tu gente; muchas veces necesitan que les recuerdes cómo se hace.\"",
           "\"Ese tema lo veo yo — te aviso mañana.\"",
           "\"Eso no está en mis manos. Lo escalo — vuelvo esta semana.\""
         ],
