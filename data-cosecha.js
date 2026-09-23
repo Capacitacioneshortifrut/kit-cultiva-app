@@ -84,35 +84,35 @@ window.PROFILES = {
         "steps": [
           {
             "k": "Observo",
-            "t": "Identifico una conducta observada para corregir o potenciar."
+            "t": "identifico una conducta observada para corregir o potenciar."
           },
           {
             "k": "Me acerco",
-            "t": "Inicio una conversación breve y cercana."
+            "t": "con tono neutro, sin señal de corrección."
           },
           {
-            "k": "Abro",
+            "k": "Comparto",
             "t": "\"Observé que [mencionar comportamiento o problema]. Esto generó [mencionar impacto]. ¿Qué acuerdo tomamos para corregirlo / potenciarlo?\""
           },
           {
             "k": "Escucho",
-            "t": "Dejo que reflexione antes de responder."
+            "t": "2 minutos sin interrumpir."
           },
           {
-            "k": "Pregunto",
-            "t": "Pregunto qué podría hacer para mejorar o llevar esa fortaleza al siguiente nivel."
+            "k": "Impulso",
+            "t": "pregunto qué podría hacer para mejorar o llevar esa fortaleza al siguiente nivel."
           },
           {
             "k": "Acordamos",
-            "t": "Definimos una acción concreta para poner en práctica."
+            "t": "definimos una acción concreta para poner en práctica."
           },
           {
             "k": "Cierro",
-            "t": "Agradezco su apertura y compromiso."
+            "t": "con reconocimiento por el compromiso."
           },
           {
             "k": "Vuelvo",
-            "t": "Retomo la conversación para revisar cómo le fue."
+            "t": "cuando se haya cumplido la fecha de seguimiento: \"¿Cómo te resultó lo que acordamos?\""
           }
         ],
         "phrases": [
@@ -120,7 +120,7 @@ window.PROFILES = {
           "“Lo que mejor vi este mes fue [comportamiento], que generó [impacto]. Quiero que sepas que lo valoro.”",
           "\"No vine a corregirte, vine a alinearnos. ¿Qué necesitas de mí?\"",
           "\"¿Qué crees que pasó? ¿Qué cambiarías tú?\"",
-          "\"Repíteme el acuerdo para asegurarnos de que quedamos igual.\"",
+          "\"¿Me repites qué acordamos para asegurarnos de que quedó claro?\"",
           "\"Antes de cerrar quiero reconocer que [conducta positiva]. Eso me da confianza.\""
         ],
         "no": [
@@ -128,7 +128,8 @@ window.PROFILES = {
           "Cerrar sin un acuerdo concreto.",
           "Saltarse el reconocimiento positivo al final.",
           "Convertirlo en monólogo de instrucciones.",
-          "No volver a preguntar sobre el acuerdo en los días siguientes."
+          "No volver a preguntar sobre el acuerdo en los días siguientes.",
+          "Generalizar (\"siempre haces…\") en vez de nombrar un hecho concreto."
         ],
         "registro": {
           "soporte": "Tarjeta Acompañamiento 1 a 1",
@@ -299,7 +300,7 @@ window.PROFILES = {
         "steps": [
           {
             "k": "Abro",
-            "t": "Abro con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
+            "t": "con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
           },
           {
             "k": "Espero",
@@ -307,19 +308,19 @@ window.PROFILES = {
           },
           {
             "k": "Escucho",
-            "t": "Escucho sin interrumpir el tema que traen."
+            "t": "sin interrumpir el tema que traen."
           },
           {
             "k": "Explico el porqué",
-            "t": "Comparto el contexto o la información que ayude a entender el tema."
+            "t": "comparto el contexto o la información que ayude a entender el tema."
           },
           {
             "k": "Decido",
-            "t": "Decido con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
+            "t": "con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
           },
           {
             "k": "Doy cierre",
-            "t": "Al día siguiente doy respuesta a las consultas pendientes."
+            "t": "al día siguiente doy respuesta a las consultas pendientes."
           }
         ],
         "phrases": [
@@ -385,7 +386,7 @@ window.PROFILES = {
           },
           {
             "k": "Nombro",
-            "t": "en el momento oportuno: \"[Nombre], te felicito por [mencionar conducta], eso nos ayudó en [mencionar impacto].\""
+            "t": "en el momento oportuno: \"[Nombre de la persona a reconocer], te felicito por [mencionar conducta], eso nos ayudó en [mencionar impacto].\""
           }
         ],
         "phrases": [
@@ -449,11 +450,11 @@ window.PROFILES = {
         "steps": [
           {
             "k": "Observo",
-            "t": "Identifico una conducta observada para corregir o potenciar."
+            "t": "identifico una conducta observada para corregir o potenciar."
           },
           {
             "k": "Me acerco",
-            "t": "Con tono neutro, sin señal de corrección."
+            "t": "con tono neutro, sin señal de corrección."
           },
           {
             "k": "Comparto",
@@ -465,11 +466,11 @@ window.PROFILES = {
           },
           {
             "k": "Impulso",
-            "t": "Pregunto qué podría hacer para mejorar o llevar esa fortaleza al siguiente nivel."
+            "t": "pregunto qué podría hacer para mejorar o llevar esa fortaleza al siguiente nivel."
           },
           {
             "k": "Acordamos",
-            "t": "Definimos una acción concreta para poner en práctica."
+            "t": "definimos una acción concreta para poner en práctica."
           },
           {
             "k": "Cierro",
@@ -485,7 +486,7 @@ window.PROFILES = {
           "“Lo que mejor vi este mes fue [comportamiento], que generó [impacto]. Quiero que sepas que lo valoro.”",
           "\"No vine a corregirte, vine a alinearnos. ¿Qué necesitas de mí?\"",
           "\"¿Qué crees que pasó? ¿Qué cambiarías tú?\"",
-          "\"Repíteme el acuerdo para asegurarnos de que quedamos igual.\"",
+          "\"¿Me repites qué acordamos para asegurarnos de que quedó claro?\"",
           "\"Antes de cerrar quiero reconocer que [conducta positiva]. Eso me da confianza.\""
         ],
         "no": [
@@ -493,7 +494,8 @@ window.PROFILES = {
           "Cerrar sin un acuerdo concreto.",
           "Saltarse el reconocimiento positivo al final.",
           "Convertirlo en monólogo de instrucciones.",
-          "No volver a preguntar sobre el acuerdo en los días siguientes."
+          "No volver a preguntar sobre el acuerdo en los días siguientes.",
+          "Generalizar (\"siempre haces…\") en vez de nombrar un hecho concreto."
         ],
         "registro": {
           "soporte": "Tarjeta Acompañamiento 1 a 1",
@@ -593,7 +595,7 @@ window.PROFILES = {
         "steps": [
           {
             "k": "Abro",
-            "t": "Abro con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
+            "t": "con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
           },
           {
             "k": "Espero",
@@ -601,19 +603,19 @@ window.PROFILES = {
           },
           {
             "k": "Escucho",
-            "t": "Escucho sin interrumpir el tema que traen."
+            "t": "sin interrumpir el tema que traen."
           },
           {
             "k": "Explico el porqué",
-            "t": "Comparto el contexto o la información que ayude a entender el tema."
+            "t": "comparto el contexto o la información que ayude a entender el tema."
           },
           {
             "k": "Decido",
-            "t": "Decido con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
+            "t": "con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
           },
           {
             "k": "Doy cierre",
-            "t": "Al día siguiente doy respuesta a las consultas pendientes."
+            "t": "al día siguiente doy respuesta a las consultas pendientes."
           }
         ],
         "phrases": [
@@ -679,7 +681,7 @@ window.PROFILES = {
           },
           {
             "k": "Nombro",
-            "t": "en el momento oportuno: \"[Nombre], te felicito por [mencionar conducta], eso nos ayudó en [mencionar impacto].\""
+            "t": "en el momento oportuno: \"[Nombre de la persona a reconocer], te felicito por [mencionar conducta], eso nos ayudó en [mencionar impacto].\""
           }
         ],
         "phrases": [
@@ -761,23 +763,27 @@ window.PROFILES = {
         "steps": [
           {
             "k": "Observo",
-            "t": "noto en terreno una conducta del líder para corregir o potenciar: sus decisiones, su trato al equipo, el cumplimiento de las indicaciones."
+            "t": "identifico una conducta del líder para corregir o potenciar: sus decisiones, su trato al equipo, el cumplimiento de las indicaciones."
+          },
+          {
+            "k": "Me acerco",
+            "t": "con tono neutro, sin señal de corrección."
           },
           {
             "k": "Comparto",
-            "t": "con CIA: \"Observé que [mencionar comportamiento o problema]. Esto generó [mencionar impacto]. ¿Qué acuerdo tomamos para corregirlo / potenciarlo?\""
+            "t": "\"Observé que [mencionar comportamiento o problema]. Esto generó [mencionar impacto]. ¿Qué acuerdo tomamos para corregirlo / potenciarlo?\""
           },
           {
-            "k": "Indago",
-            "t": "si se justifica con que \"ya lo comunicó\", pregunto si verificó que se cumpliera."
+            "k": "Escucho",
+            "t": "2 minutos sin interrumpir."
           },
           {
-            "k": "Explico el impacto",
-            "t": "conecto la desviación con su efecto concreto en la operación (materiales, tiempos, cosecha)."
+            "k": "Impulso",
+            "t": "pregunto qué podría hacer para mejorar o llevar esa fortaleza al siguiente nivel."
           },
           {
             "k": "Acordamos",
-            "t": "pido una solución inmediata y pregunto: \"¿Cómo evitamos que se repita?\""
+            "t": "definimos una acción concreta para poner en práctica."
           },
           {
             "k": "Cierro",
@@ -785,7 +791,7 @@ window.PROFILES = {
           },
           {
             "k": "Vuelvo",
-            "t": "reviso el cumplimiento del acuerdo."
+            "t": "cuando se haya cumplido la fecha de seguimiento: \"¿Cómo te resultó lo que acordamos?\""
           }
         ],
         "phrases": [
@@ -799,7 +805,8 @@ window.PROFILES = {
           "Quedarse en \"ya lo comuniqué\" sin verificar el cumplimiento.",
           "Corregir sin explicar el impacto en la operación.",
           "Cerrar sin un acuerdo concreto ni fecha para volver a revisar.",
-          "Hacer el acompañamiento frente al grupo — siempre es 1:1."
+          "Hacer el acompañamiento frente al grupo — siempre es 1:1.",
+          "Generalizar (\"siempre haces…\") en vez de nombrar un hecho concreto."
         ],
         "registro": {
           "soporte": "Tarjeta Acompañamiento 1 a 1",
@@ -894,7 +901,7 @@ window.PROFILES = {
         "steps": [
           {
             "k": "Abro",
-            "t": "Abro con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
+            "t": "con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
           },
           {
             "k": "Espero",
@@ -902,19 +909,19 @@ window.PROFILES = {
           },
           {
             "k": "Escucho",
-            "t": "Escucho sin interrumpir el tema que traen."
+            "t": "sin interrumpir el tema que traen."
           },
           {
             "k": "Explico el porqué",
-            "t": "Comparto el contexto o la información que ayude a entender el tema."
+            "t": "comparto el contexto o la información que ayude a entender el tema."
           },
           {
             "k": "Decido",
-            "t": "Decido con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
+            "t": "con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
           },
           {
             "k": "Doy cierre",
-            "t": "Al día siguiente doy respuesta a las consultas pendientes."
+            "t": "al día siguiente doy respuesta a las consultas pendientes."
           }
         ],
         "phrases": [
@@ -980,7 +987,7 @@ window.PROFILES = {
           },
           {
             "k": "Nombro",
-            "t": "en el momento oportuno frente al grupo: \"[Nombre], te felicito por [mencionar conducta] — eso nos ayudó en [mencionar impacto].\""
+            "t": "en el momento oportuno: \"[Nombre de la persona a reconocer], te felicito por [mencionar conducta], eso nos ayudó en [mencionar impacto].\""
           }
         ],
         "phrases": [
@@ -1052,7 +1059,7 @@ window.PROFILES = {
         "icon": "message-square-quote",
         "title": "Acompañamiento 1 a 1",
         "freq": "Diario",
-        "purpose": "Construir autoridad desde la relación: presencia visible que reconoce primero el avance y luego ajusta el detalle, explicando siempre el porqué.",
+        "purpose": "Construir autoridad desde la relación: presencia visible que reconoce primero el avance, ajusta el detalle con CIA (Comportamiento · Impacto · Acuerdo) y explica siempre el porqué.",
         "context": {
           "freq": "Diario",
           "place": "En el campo"
@@ -1064,32 +1071,48 @@ window.PROFILES = {
           },
           {
             "k": "Observo",
-            "t": "cómo cosecha cada persona; quién avanza bien, quién parece cansado."
+            "t": "cómo cosecha cada persona; quién avanza bien, quién necesita un ajuste."
           },
           {
             "k": "Reconozco primero",
-            "t": "nombro lo positivo: \"Vi que [comportamiento]. Eso está bien hecho.\""
+            "t": "nombro lo positivo: \"Vi que [mencionar comportamiento]. Eso está bien hecho.\""
           },
           {
             "k": "Ajusto el detalle",
-            "t": "con amabilidad: \"Solo veo [defecto]; ¿lo retiramos y lo colocamos en el pote de descarte?\""
+            "t": "con amabilidad y en privado: \"Solo veo [mencionar comportamiento o problema]. Esto genera [mencionar impacto].\""
           },
           {
             "k": "Explico el porqué",
-            "t": "conecto la calidad con el cliente, con más trabajo para el equipo y con las utilidades."
+            "t": "conecto la calidad con el cliente, con más trabajo para el equipo y con sus utilidades."
+          },
+          {
+            "k": "Pregunto",
+            "t": "invito a reflexionar: \"¿Qué harías tú distinto?\""
+          },
+          {
+            "k": "Acordamos",
+            "t": "construimos juntos el acuerdo (por ejemplo, retirar lo que va al pote de descarte y revisar antes de avanzar) y confirmo que quedó claro."
+          },
+          {
+            "k": "Vuelvo",
+            "t": "paso a verificar en los próximos días y reconozco cuando mejora."
           }
         ],
         "phrases": [
           "\"Veo que vienes avanzando muy bien. ¡Eso es muy bueno!\"",
           "\"Solo veo [defecto] en la jaba. ¿Te parece si lo retiramos al pote de descarte?\"",
           "\"Mientras mejor cosechemos, la fruta llega con la calidad que el cliente requiere: eso significa más trabajo para todos y se refleja en tus utilidades.\"",
-          "\"Un momento — quiero decirte algo en privado.\""
+          "\"Un momento — quiero decirte algo en privado.\"",
+          "\"¿Qué harías tú distinto la próxima vez?\"",
+          "\"¿Me repites qué acordamos para asegurarnos de que quedó claro?\""
         ],
         "no": [
           "Aparecer solo cuando hay un problema (eso lo convierte en ronda de control).",
           "Corregir en público frente al grupo.",
           "Corregir sin reconocer primero el avance.",
-          "Recorrer siempre el mismo sector o las mismas personas."
+          "Recorrer siempre el mismo sector o las mismas personas.",
+          "Generalizar (\"siempre haces…\") en vez de nombrar un hecho concreto.",
+          "Dar la charla y no volver a verificar lo acordado."
         ],
         "registro": {
           "hidden": true
@@ -1111,7 +1134,7 @@ window.PROFILES = {
         "steps": [
           {
             "k": "Abro",
-            "t": "Abro con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
+            "t": "con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
           },
           {
             "k": "Espero",
@@ -1119,19 +1142,19 @@ window.PROFILES = {
           },
           {
             "k": "Escucho",
-            "t": "Escucho sin interrumpir el tema que traen."
+            "t": "sin interrumpir el tema que traen."
           },
           {
             "k": "Explico el porqué",
-            "t": "Comparto el contexto o la información que ayude a entender el tema."
+            "t": "comparto el contexto o la información que ayude a entender el tema."
           },
           {
             "k": "Decido",
-            "t": "Decido con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
+            "t": "con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
           },
           {
             "k": "Doy cierre",
-            "t": "Al día siguiente doy respuesta a las consultas pendientes."
+            "t": "al día siguiente doy respuesta a las consultas pendientes."
           }
         ],
         "phrases": [
@@ -1201,7 +1224,7 @@ window.PROFILES = {
           },
           {
             "k": "Nombro",
-            "t": "en el momento oportuno frente al grupo: \"[Nombre], te felicito por [mencionar conducta] — eso nos ayudó en [mencionar impacto].\""
+            "t": "en el momento oportuno: \"[Nombre de la persona a reconocer], te felicito por [mencionar conducta], eso nos ayudó en [mencionar impacto].\""
           }
         ],
         "phrases": [

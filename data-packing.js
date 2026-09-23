@@ -34,11 +34,11 @@ Object.assign(window.PROFILES, {
         "steps": [
           {
             "k": "Observo",
-            "t": "Identifico una conducta observada para corregir o potenciar."
+            "t": "identifico una conducta observada para corregir o potenciar."
           },
           {
             "k": "Me acerco",
-            "t": "Con tono neutro, sin señal de corrección."
+            "t": "con tono neutro, sin señal de corrección."
           },
           {
             "k": "Comparto",
@@ -50,11 +50,11 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Impulso",
-            "t": "Pregunto qué podría hacer para mejorar o llevar esa fortaleza al siguiente nivel."
+            "t": "pregunto qué podría hacer para mejorar o llevar esa fortaleza al siguiente nivel."
           },
           {
             "k": "Acordamos",
-            "t": "Definimos una acción concreta para poner en práctica."
+            "t": "definimos una acción concreta para poner en práctica."
           },
           {
             "k": "Cierro",
@@ -70,7 +70,7 @@ Object.assign(window.PROFILES, {
           "“Lo que mejor vi este mes fue [comportamiento], que generó [impacto]. Quiero que sepas que lo valoro.”",
           "\"No vine a corregirte, vine a alinearnos. ¿Qué necesitas de mí?\"",
           "\"¿Qué crees que pasó? ¿Qué cambiarías tú?\"",
-          "\"Repíteme el acuerdo para asegurarnos de que quedamos igual.\"",
+          "\"¿Me repites qué acordamos para asegurarnos de que quedó claro?\"",
           "\"Antes de cerrar quiero reconocer que [conducta positiva]. Eso me da confianza.\""
         ],
         "no": [
@@ -78,7 +78,8 @@ Object.assign(window.PROFILES, {
           "Cerrar sin un acuerdo concreto.",
           "Saltarse el reconocimiento positivo al final.",
           "Convertirlo en monólogo de instrucciones.",
-          "No volver a preguntar sobre el acuerdo en los días siguientes."
+          "No volver a preguntar sobre el acuerdo en los días siguientes.",
+          "Generalizar (\"siempre haces…\") en vez de nombrar un hecho concreto."
         ],
         "registro": {
           "soporte": "Tarjeta Acompañamiento 1 a 1",
@@ -219,7 +220,7 @@ Object.assign(window.PROFILES, {
         "steps": [
           {
             "k": "Abro",
-            "t": "Abro con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
+            "t": "con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
           },
           {
             "k": "Espero",
@@ -227,19 +228,19 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Escucho",
-            "t": "Escucho sin interrumpir el tema que traen."
+            "t": "sin interrumpir el tema que traen."
           },
           {
             "k": "Explico el porqué",
-            "t": "Comparto el contexto o la información que ayude a entender el tema."
+            "t": "comparto el contexto o la información que ayude a entender el tema."
           },
           {
             "k": "Decido",
-            "t": "Decido con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
+            "t": "con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
           },
           {
             "k": "Doy cierre",
-            "t": "Al día siguiente doy respuesta a las consultas pendientes."
+            "t": "al día siguiente doy respuesta a las consultas pendientes."
           }
         ],
         "phrases": [
@@ -357,7 +358,7 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Nombro",
-            "t": "en el momento oportuno: \"[Nombre], te felicito por [mencionar conducta], eso nos ayudó en [mencionar impacto].\""
+            "t": "en el momento oportuno: \"[Nombre de la persona a reconocer], te felicito por [mencionar conducta], eso nos ayudó en [mencionar impacto].\""
           }
         ],
         "phrases": [
@@ -423,11 +424,11 @@ Object.assign(window.PROFILES, {
         "steps": [
           {
             "k": "Observo",
-            "t": "Identifico una conducta observada para corregir o potenciar."
+            "t": "identifico una conducta observada para corregir o potenciar."
           },
           {
             "k": "Me acerco",
-            "t": "Inicio una conversación breve y cercana."
+            "t": "con tono neutro, sin señal de corrección."
           },
           {
             "k": "Comparto",
@@ -435,23 +436,23 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Escucho",
-            "t": "Dejo que reflexione antes de responder."
+            "t": "2 minutos sin interrumpir."
           },
           {
             "k": "Impulso",
-            "t": "Pregunto qué podría hacer para mejorar o llevar esa fortaleza al siguiente nivel."
+            "t": "pregunto qué podría hacer para mejorar o llevar esa fortaleza al siguiente nivel."
           },
           {
             "k": "Acordamos",
-            "t": "Definimos una acción concreta para poner en práctica."
+            "t": "definimos una acción concreta para poner en práctica."
           },
           {
-            "k": "Reconozco",
-            "t": "Agradezco su apertura y compromiso."
+            "k": "Cierro",
+            "t": "con reconocimiento por el compromiso."
           },
           {
-            "k": "Hago seguimiento",
-            "t": "Retomo la conversación para revisar cómo le fue."
+            "k": "Vuelvo",
+            "t": "cuando se haya cumplido la fecha de seguimiento: \"¿Cómo te resultó lo que acordamos?\""
           }
         ],
         "phrases": [
@@ -459,7 +460,7 @@ Object.assign(window.PROFILES, {
           "“Lo que mejor vi este mes fue [comportamiento], que generó [impacto]. Quiero que sepas que lo valoro.”",
           "\"No vine a corregirte, vine a alinearnos. ¿Qué necesitas de mí?\"",
           "\"¿Qué crees que pasó? ¿Qué cambiarías tú?\"",
-          "\"Repíteme el acuerdo para asegurarnos de que quedamos igual.\"",
+          "\"¿Me repites qué acordamos para asegurarnos de que quedó claro?\"",
           "\"Antes de cerrar quiero reconocer que [conducta positiva]. Eso me da confianza.\""
         ],
         "no": [
@@ -467,7 +468,8 @@ Object.assign(window.PROFILES, {
           "Cerrar sin un acuerdo concreto.",
           "Saltarse el reconocimiento positivo al final.",
           "Convertirlo en monólogo de instrucciones.",
-          "No volver a preguntar sobre el acuerdo en los días siguientes."
+          "No volver a preguntar sobre el acuerdo en los días siguientes.",
+          "Generalizar (\"siempre haces…\") en vez de nombrar un hecho concreto."
         ],
         "registro": {
           "soporte": "Tarjeta Acompañamiento 1 a 1",
@@ -528,7 +530,7 @@ Object.assign(window.PROFILES, {
         "steps": [
           {
             "k": "Abro",
-            "t": "Abro con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
+            "t": "con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
           },
           {
             "k": "Espero",
@@ -536,19 +538,19 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Escucho",
-            "t": "Escucho sin interrumpir el tema que traen."
+            "t": "sin interrumpir el tema que traen."
           },
           {
             "k": "Explico el porqué",
-            "t": "Comparto el contexto o la información que ayude a entender el tema."
+            "t": "comparto el contexto o la información que ayude a entender el tema."
           },
           {
             "k": "Decido",
-            "t": "Decido con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
+            "t": "con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
           },
           {
             "k": "Doy cierre",
-            "t": "Al día siguiente doy respuesta a las consultas pendientes."
+            "t": "al día siguiente doy respuesta a las consultas pendientes."
           }
         ],
         "phrases": [
@@ -666,7 +668,7 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Nombro",
-            "t": "en el momento oportuno: \"[Nombre], te felicito por [mencionar conducta], eso nos ayudó en [mencionar impacto].\""
+            "t": "en el momento oportuno: \"[Nombre de la persona a reconocer], te felicito por [mencionar conducta], eso nos ayudó en [mencionar impacto].\""
           }
         ],
         "phrases": [
@@ -732,11 +734,11 @@ Object.assign(window.PROFILES, {
         "steps": [
           {
             "k": "Observo",
-            "t": "noto en terreno cómo trabaja el Supervisor: sus decisiones, su trato al equipo, su presencia."
+            "t": "noto en terreno cómo trabaja el Supervisor (sus decisiones, su trato al equipo, su presencia) e identifico una conducta para corregir o potenciar."
           },
           {
-            "k": "Identifico",
-            "t": "una conducta observada para corregir o potenciar."
+            "k": "Me acerco",
+            "t": "con tono neutro, sin señal de corrección."
           },
           {
             "k": "Comparto",
@@ -748,11 +750,11 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Impulso",
-            "t": "Pregunto qué podría hacer para mejorar o llevar esa fortaleza al siguiente nivel."
+            "t": "pregunto qué podría hacer para mejorar o llevar esa fortaleza al siguiente nivel."
           },
           {
             "k": "Acordamos",
-            "t": "Definimos una acción concreta para poner en práctica."
+            "t": "definimos una acción concreta para poner en práctica."
           },
           {
             "k": "Cierro",
@@ -767,7 +769,7 @@ Object.assign(window.PROFILES, {
           "\"Vi [comportamiento o problema]. Eso generó [impacto]. ¿Qué acuerdo tomamos?\"",
           "“Lo que mejor vi este mes fue [comportamiento], que generó [impacto]. Quiero que sepas que lo valoro.”",
           "\"¿Qué necesitas de mí para que esto salga mejor?\"",
-          "\"Repíteme el acuerdo para asegurarnos de que quedamos igual.\"",
+          "\"¿Me repites qué acordamos para asegurarnos de que quedó claro?\"",
           "\"Antes de irme quiero reconocer que [conducta positiva]. Eso marca la diferencia.\""
         ],
         "no": [
@@ -776,7 +778,8 @@ Object.assign(window.PROFILES, {
           "Hacer el acompañamiento en grupo — siempre es 1:1.",
           "Irse sin un acuerdo concreto.",
           "Saltarse el reconocimiento al cerrar.",
-          "No volver a preguntar sobre el acuerdo."
+          "No volver a preguntar sobre el acuerdo.",
+          "Generalizar (\"siempre haces…\") en vez de nombrar un hecho concreto."
         ],
         "registro": {
           "soporte": "Tarjeta Acompañamiento 1 a 1",
@@ -832,7 +835,7 @@ Object.assign(window.PROFILES, {
         "steps": [
           {
             "k": "Abro",
-            "t": "Abro con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
+            "t": "con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
           },
           {
             "k": "Espero",
@@ -840,19 +843,19 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Escucho",
-            "t": "Escucho sin interrumpir el tema que traen."
+            "t": "sin interrumpir el tema que traen."
           },
           {
             "k": "Explico el porqué",
-            "t": "Comparto el contexto o la información que ayude a entender el tema."
+            "t": "comparto el contexto o la información que ayude a entender el tema."
           },
           {
             "k": "Decido",
-            "t": "Decido con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
+            "t": "con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
           },
           {
             "k": "Doy cierre",
-            "t": "Al día siguiente doy respuesta a las consultas pendientes."
+            "t": "al día siguiente doy respuesta a las consultas pendientes."
           }
         ],
         "phrases": [
@@ -975,7 +978,7 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Nombro",
-            "t": "en el momento oportuno frente al grupo: \"[Nombre], te felicito por [mencionar conducta] — eso nos ayudó en [mencionar impacto].\""
+            "t": "en el momento oportuno: \"[Nombre de la persona a reconocer], te felicito por [mencionar conducta], eso nos ayudó en [mencionar impacto].\""
           }
         ],
         "phrases": [
@@ -1049,7 +1052,7 @@ Object.assign(window.PROFILES, {
         "icon": "message-square-quote",
         "title": "Acompañamiento 1 a 1",
         "freq": "Diario (ambos turnos)",
-        "purpose": "Acompañar en las líneas (ambos turnos): reconocer el avance, señalar la desviación con su impacto en el cliente, desarrollar al líder a cargo para que haga su propio acompañamiento y tratar la seguridad como no negociable.",
+        "purpose": "Acompañar en las líneas (ambos turnos) con CIA (Comportamiento · Impacto · Acuerdo): reconocer el avance, señalar la desviación con su impacto en el cliente, desarrollar al líder a cargo para que haga su propio acompañamiento y tratar la seguridad como no negociable.",
         "context": {
           "freq": "Diario (ambos turnos)",
           "place": "En movimiento por las líneas durante el turno"
@@ -1065,19 +1068,27 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Señalo la desviación con su impacto",
-            "t": "\"Están reportando [desviación], y esa calificación es la calidad que le llega al cliente.\""
+            "t": "\"Veo que [mencionar comportamiento o problema]. Esto genera [mencionar impacto], y esa calificación es la calidad que le llega al cliente.\""
           },
           {
-            "k": "Desarrollo al líder a cargo",
-            "t": "le pido que haga su propio acompañamiento 1 a 1, saque muestreo e identifique de dónde vienen las desviaciones, en vez de resolverlo yo."
+            "k": "Pregunto",
+            "t": "invito a reflexionar: \"¿Qué harías tú distinto?\""
+          },
+          {
+            "k": "Acordamos",
+            "t": "construimos juntos el acuerdo: le pido que haga su propio acompañamiento 1 a 1, saque muestreo e identifique de dónde vienen las desviaciones, en vez de resolverlo yo."
           },
           {
             "k": "En seguridad, no negocio",
             "t": "si falta un EPP, lo corrijo en el momento: \"por tu seguridad y bienestar\"."
           },
           {
-            "k": "Cierro pidiendo retorno",
+            "k": "Cierro",
             "t": "\"¿Me comentas una vez corregido?\""
+          },
+          {
+            "k": "Vuelvo",
+            "t": "paso a verificar en los próximos días."
           }
         ],
         "phrases": [
@@ -1085,14 +1096,16 @@ Object.assign(window.PROFILES, {
           "\"Haz acompañamiento 1 a 1 con tu equipo: saca el muestreo e identifica de dónde vienen las desviaciones.\"",
           "\"Ellos deben verte como su líder: acompáñalos y oriéntalos cuando algo no sale bien.\"",
           "\"Te pido que uses tu EPP por tu propia seguridad y bienestar. No ejecutamos labores sin EPP.\"",
-          "\"¿Me comentas una vez corregido?\""
+          "\"¿Me comentas una vez corregido?\"",
+          "\"¿Qué harías tú distinto la próxima vez?\""
         ],
         "no": [
           "Aparecer solo cuando hay un problema en la línea.",
           "Resolver por el líder lo que él debe acompañar con su equipo.",
           "Corregir en público frente al equipo.",
           "Dejar pasar una falta de EPP.",
-          "Tratar el turno noche como turno de segunda."
+          "Tratar el turno noche como turno de segunda.",
+          "Generalizar (\"siempre haces…\") en vez de nombrar un hecho concreto."
         ],
         "registro": {
           "hidden": true
@@ -1114,7 +1127,7 @@ Object.assign(window.PROFILES, {
         "steps": [
           {
             "k": "Abro",
-            "t": "Abro con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
+            "t": "con una pregunta honesta: \"¿Cómo van? ¿Algo que quieran contarme o que necesiten?\""
           },
           {
             "k": "Espero",
@@ -1122,19 +1135,19 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Escucho",
-            "t": "Escucho sin interrumpir el tema que traen."
+            "t": "sin interrumpir el tema que traen."
           },
           {
             "k": "Explico el porqué",
-            "t": "Comparto el contexto o la información que ayude a entender el tema."
+            "t": "comparto el contexto o la información que ayude a entender el tema."
           },
           {
             "k": "Decido",
-            "t": "Decido con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
+            "t": "con qué recurso darle solución a cada tema: lo resuelvo yo, lo veo con un par o busco a quien pueda ayudar."
           },
           {
             "k": "Doy cierre",
-            "t": "Al día siguiente doy respuesta a las consultas pendientes."
+            "t": "al día siguiente doy respuesta a las consultas pendientes."
           }
         ],
         "phrases": [
@@ -1212,7 +1225,7 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Nombro",
-            "t": "en el momento oportuno frente al grupo: \"[Nombre], te felicito por [mencionar conducta] — eso nos ayudó en [mencionar impacto].\""
+            "t": "en el momento oportuno: \"[Nombre de la persona a reconocer], te felicito por [mencionar conducta], eso nos ayudó en [mencionar impacto].\""
           }
         ],
         "phrases": [
@@ -1291,7 +1304,7 @@ Object.assign(window.PROFILES, {
         "icon": "message-square-quote",
         "title": "Acompañamiento 1 a 1",
         "freq": "Diario (ambos turnos)",
-        "purpose": "Acompañar a la línea en el momento: ante la duda, medir con muestreo (no buscar culpables) y corregir con evidencia; la seguridad no se negocia.",
+        "purpose": "Acompañar a la línea en el momento con CIA (Comportamiento · Impacto · Acuerdo): ante la duda, medir con muestreo (no buscar culpables), mostrar la evidencia y acordar juntos la corrección; la seguridad no se negocia.",
         "context": {
           "freq": "Diario (ambos turnos)",
           "place": "En la línea durante el turno"
@@ -1311,24 +1324,34 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Muestro la evidencia",
-            "t": "comparto el resultado y pido corregir donde el dato lo señala."
+            "t": "con CIA: \"El muestreo muestra [mencionar comportamiento o problema]. Esto genera [mencionar impacto].\""
+          },
+          {
+            "k": "Acordamos",
+            "t": "invito a reflexionar (\"¿Qué haríamos distinto?\") y acordamos juntos dónde poner foco."
           },
           {
             "k": "En seguridad, no negocio",
             "t": "si falta un EPP, lo corrijo en el momento: \"por tu seguridad y bienestar\"."
+          },
+          {
+            "k": "Vuelvo",
+            "t": "hago un nuevo muestreo para verificar que la corrección se sostiene."
           }
         ],
         "phrases": [
           "\"Veo que están pasando algunos [defectos]. No busco un responsable, quiero entender qué pasa.\"",
           "\"¿Les parece si hago un muestreo para revisar la línea completa?\"",
           "\"El muestreo confirma que están pasando defectos en varios puntos; retiremos con mayor atención.\"",
-          "\"Te pido que uses tu EPP por tu propia seguridad y bienestar. No ejecutamos labores sin EPP.\""
+          "\"Te pido que uses tu EPP por tu propia seguridad y bienestar. No ejecutamos labores sin EPP.\"",
+          "\"¿Qué haríamos distinto para que no se escape el defecto?\""
         ],
         "no": [
           "Buscar culpables antes de medir.",
           "Discutir opiniones en vez de mostrar el dato del muestreo.",
           "Exponer a una persona al corregir frente al grupo.",
-          "Dejar pasar una falta de EPP."
+          "Dejar pasar una falta de EPP.",
+          "Generalizar (\"siempre haces…\") en vez de nombrar un hecho concreto."
         ],
         "registro": {
           "hidden": true
@@ -1357,7 +1380,7 @@ Object.assign(window.PROFILES, {
           },
           {
             "k": "Nombro",
-            "t": "en el momento oportuno frente al grupo: \"[Nombre], te felicito por [mencionar conducta] — eso nos ayudó en [mencionar impacto].\""
+            "t": "en el momento oportuno: \"[Nombre de la persona a reconocer], te felicito por [mencionar conducta], eso nos ayudó en [mencionar impacto].\""
           }
         ],
         "phrases": [
