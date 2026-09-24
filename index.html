@@ -698,6 +698,22 @@
   .esc-leg-l { flex: 1; }
   .esc-leg-item b { color: #3a2f22; }
 
+  /* quién usa Reconocimiento Sincero */
+  .dash-reco { margin-top: 12px; }
+  .reco-sum { font-size: 13px; color: #5a4a38; margin: -4px 0 10px; }
+  .reco-sum b { color: #D9A521; font-size: 15px; }
+  .reco-filter { margin-bottom: 8px; }
+  .reco-list { max-height: 420px; overflow-y: auto; }
+  .reco-row { display: flex; align-items: center; gap: 12px; padding: 9px 0; }
+  .reco-row + .reco-row { border-top: 1px solid #f0e7da; }
+  .reco-who { flex: 1; min-width: 0; }
+  .reco-name { font-size: 13px; font-weight: 700; color: #3a2f22; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .reco-sub { font-size: 11px; color: #8a7a68; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .reco-stat { text-align: right; flex: none; }
+  .reco-n { font-size: 16px; color: #D9A521; }
+  .reco-last { font-size: 11px; color: #8a7a68; }
+  .reco-row.off .reco-n { color: #c9bba6; }
+
   /* "Modo computadora": en pantallas grandes el dashboard rompe el ancho de
      teléfono (430px) y usa el espacio de la PC. Se activa solo cuando la vista
      de dashboard está abierta (body.dashboard-open) y la pantalla es ancha. */

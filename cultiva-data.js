@@ -321,6 +321,44 @@
         .then(function (q) { if (q.error) throw q.error; return q.data || {}; });
     },
 
+    /* ---- DASHBOARD · quién usa Reconocimiento Sincero ---- */
+    /* [{legajo, nombre, cargo, area, nivel, n, ultimo}] ; mismos filtros que dashResumen.
+       Si la función SQL aún no se creó en Supabase → rechaza con {missing:true}. */
+    dashReconocimiento: function (filtros) {
+      filtros = filtros || {};
+      var fArea = filtros.area || null, fNiv = filtros.nivel || null, per = filtros.periodo || "semana";
+      if (!isSb()) {
+        var AREAS = ["cosecha", "produccion", "packing", "calidad"];
+        var NIVELES = { cosecha: ["N1", "N2", "N3", "N4"], produccion: ["N1", "N2", "N3", "N4"], packing: ["N1", "N2", "N3", "N4"], calidad: ["N2", "N3", "N4", "TAC"] };
+        var NOMS = ["Ana Torres", "Luis Ramos", "Marta Ríos", "Pedro Ruiz", "Sara Díaz", "Jorge León", "Elena Vega", "Raúl Pinto", "Nadia Cruz", "Iván Soto", "Rosa Melo", "Hugo Paz", "Lía Fuentes", "Omar Ríos"];
+        var mult = per === "acumulado" ? 6 : (per === "mes" ? 3 : 1);
+        var seed = 20260924, out = [], k = 0;
+        function rnd() { seed = (seed * 1103515245 + 12345) & 0x7fffffff; return seed / 0x7fffffff; }
+        AREAS.forEach(function (a) {
+          NIVELES[a].forEach(function (nv) {
+            var cnt = 2 + Math.floor(rnd() * 3);
+            for (var i = 0; i < cnt; i++) {
+              var usa = rnd() > 0.4, n = usa ? (1 + Math.floor(rnd() * 3)) * mult : 0;
+              out.push({ legajo: "demo" + (k++), nombre: NOMS[Math.floor(rnd() * NOMS.length)], cargo: null, area: a, nivel: nv,
+                n: n, ultimo: n ? new Date(Date.now() - Math.floor(rnd() * 6 * mult) * 86400000 - Math.floor(rnd() * 36000000)).toISOString() : null });
+            }
+          });
+        });
+        out = out.filter(function (p) { return (!fArea || p.area === fArea) && (!fNiv || p.nivel === fNiv); })
+          .sort(function (a, b) { return (b.n - a.n) || String(b.ultimo || "").localeCompare(String(a.ultimo || "")); });
+        return Promise.resolve(out);
+      }
+      return client().rpc("dash_reconocimiento", { p_area: fArea, p_nivel: fNiv, p_periodo: per })
+        .then(function (q) {
+          if (q.error) {
+            var m = (q.error.message || "") + " " + (q.error.code || "");
+            if (/dash_reconocimiento|PGRST202|42883|does not exist|Could not find/i.test(m)) throw { missing: true };
+            throw q.error;
+          }
+          return q.data || [];
+        });
+    },
+
     /* ---- SEGUIMIENTOS DE HOY (fecha propia + escaladas por vencer) ---- */
     /* {propios: [{ritual_id, vals}], porResolver: n, enviadasPendientes: n} */
     seguimientosHoy: function (perfil) {

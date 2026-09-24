@@ -830,6 +830,35 @@ const ANTIGUO_TITLES = (function () {
   return s;
 })();
 const ANTIGUOS_OPTS = [["ocultar", T("dash.hide")], ["mostrar", T("dash.show")]];
+const RECO_OPTS = [["todos", T("dash.allM")], ["usan", T("dash.recoUse")], ["nousan", T("dash.recoNoUse")]];
+
+/* Panel "¿Quién usa Reconocimiento Sincero?": por líder, cuántos reconocimientos
+   guardó en el periodo y la fecha/hora del último. Filtro Todos / Lo usan / No lo usan. */
+function RecoPanel({ list, missing, perLbl }) {
+  const [f, setF] = useState("todos");
+  const all = list || [];
+  const usan = all.filter((p) => (p.n || 0) > 0).length;
+  const rows = all.filter((p) => f === "todos" || (f === "usan" ? p.n > 0 : !(p.n > 0)));
+  const fmtDT = (t) => { try { return new Date(t).toLocaleString("es-PE", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" }); } catch (e) { return "—"; } };
+  return h("div", { className: "dash-panel dash-reco" },
+    h("h3", { className: "dash-h" }, I("award", "ico-xs"), T("dash.recoTitle")),
+    missing ? h("p", { className: "dash-empty" }, T("dash.recoMissing")) : h("div", null,
+      h("div", { className: "reco-sum" },
+        h("b", null, usan + " " + T("dash.of") + " " + all.length),
+        " " + T("dash.recoSummary") + " (" + perLbl + ")"),
+      h("div", { className: "reco-filter" }, h(Chips, { opts: RECO_OPTS, value: f, onPick: setF })),
+      rows.length ? h("div", { className: "reco-list" },
+        rows.slice(0, 300).map((p) => h("div", { key: p.legajo, className: "reco-row" + (p.n > 0 ? "" : " off") },
+          h("div", { className: "reco-who" },
+            h("div", { className: "reco-name" }, p.nombre || p.legajo),
+            h("div", { className: "reco-sub" }, [DASH_AREA[p.area] || p.area, p.nivel, p.cargo].filter(Boolean).join(" · "))),
+          h("div", { className: "reco-stat" },
+            h("b", { className: "reco-n" }, p.n || 0),
+            h("div", { className: "reco-last" }, p.n > 0 ? T("dash.recoLast") + ": " + fmtDT(p.ultimo) : T("dash.recoNever"))),
+        ))) : h("p", { className: "dash-empty" }, T("dash.noData")),
+    ),
+  );
+}
 
 function Kpi({ icon, label, value, sub, color }) {
   return h("div", { className: "dash-kpi", style: { "--kc": color || "#3a2f22" } },
@@ -877,11 +906,16 @@ function Dashboard({ onBack, userName, onExplore }) {
   const [nivel, setNivel] = useState("");
   const [periodo, setPeriodo] = useState("semana");
   const [verAntiguos, setVerAntiguos] = useState("ocultar");   // filtro de rituales antiguos (escaladas)
+  const [reco, setReco] = useState(null);                      // quién usa Reconocimiento Sincero
+  const [recoMissing, setRecoMissing] = useState(false);
 
   function load() {
     if (!D || !D.dashResumen) return;
     D.dashResumen({ area: area || null, nivel: nivel || null, periodo: periodo })
       .then((r) => { setData(r || {}); setTs(Date.now()); }).catch(() => setData({}));
+    if (D.dashReconocimiento) D.dashReconocimiento({ area: area || null, nivel: nivel || null, periodo: periodo })
+      .then((r) => { setReco(r || []); setRecoMissing(false); })
+      .catch((e) => { setReco([]); setRecoMissing(!!(e && e.missing)); });
   }
   useEffect(() => { document.body.classList.add("dashboard-open"); return () => document.body.classList.remove("dashboard-open"); }, []);
   // recarga al montar y cada vez que cambia un filtro; auto-refresco cada minuto
@@ -965,6 +999,8 @@ function Dashboard({ onBack, userName, onExplore }) {
                 h("b", null, s[1] != null ? s[1] : "—")))),
           ) : null,
         ),
+        // ---- quién usa Reconocimiento Sincero (respeta Área / Nivel / Periodo) ----
+        h(RecoPanel, { list: reco, missing: recoMissing, perLbl: perLbl }),
       ),
     ),
   );
