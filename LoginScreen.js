@@ -95,7 +95,6 @@ function LoginScreen({ onLogin, onReview, onMaestro }) {
       gh("span", { className: "login-review-star" }, "*"),
       gh("button", { className: "login-review-btn", type: "button", onClick: onReview },
         GI("key-round", "ico-xs"), GT("login.review")),
-      gh("span", { className: "login-review-note" }, GT("login.reviewNote")),
     ),
   );
 }
