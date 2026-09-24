@@ -478,11 +478,14 @@
   .btn-send:active { transform: scale(0.985); }
 
   .hist { margin-top: 18px; border-top: 1px dashed color-mix(in srgb, var(--cultiva-blue) 26%, transparent); padding-top: 14px; }
-  .hist-h { display: flex; align-items: center; gap: 7px; width: 100%; cursor: pointer;
-    background: none; border: none; padding: 0; font-family: var(--font-display); font-weight: 700;
-    text-transform: uppercase; letter-spacing: 0.03em; font-size: 11.5px; color: var(--cultiva-blue); }
-  .hist-h .hist-count { background: var(--cultiva-blue); color: #fff; border-radius: 999px; font-size: 10px; padding: 2px 7px; }
-  .hist-h i:last-child { margin-left: auto; }
+  .hist-h { display: inline-flex; align-items: center; gap: 6px; cursor: pointer;
+    background: #fff; border: 1px solid color-mix(in srgb, var(--cultiva-blue) 35%, transparent); border-radius: 999px;
+    padding: 6px 12px; font-family: var(--font-display); font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.03em; font-size: 11px; color: var(--cultiva-blue); }
+  .hist-h.on { background: color-mix(in srgb, var(--cultiva-blue) 8%, #fff); }
+  .hist-h .hist-count { background: var(--cultiva-blue); color: #fff; border-radius: 999px; font-size: 10px; padding: 1px 6px; }
+  .hist-h .hist-ico { display: inline-flex; }
+  .hist-empty { margin-top: 10px; font-size: 12.5px; color: var(--ink-500, #6b6b6b); }
   .hist-list { display: flex; flex-direction: column; gap: 8px; margin-top: 11px; }
   .hist-item { padding: 11px 12px; border-radius: 12px; background: var(--paper-off); border: 1px solid var(--ink-100); }
   .hist-item.esc { border-color: #EAD3A0; background: #FEFBF4; }
@@ -694,6 +697,22 @@
   .esc-dot { width: 10px; height: 10px; border-radius: 3px; flex: none; }
   .esc-leg-l { flex: 1; }
   .esc-leg-item b { color: #3a2f22; }
+
+  /* quién usa Reconocimiento Sincero */
+  .dash-reco { margin-top: 12px; }
+  .reco-sum { font-size: 13px; color: #5a4a38; margin: -4px 0 10px; }
+  .reco-sum b { color: #D9A521; font-size: 15px; }
+  .reco-filter { margin-bottom: 8px; }
+  .reco-list { max-height: 420px; overflow-y: auto; }
+  .reco-row { display: flex; align-items: center; gap: 12px; padding: 9px 0; }
+  .reco-row + .reco-row { border-top: 1px solid #f0e7da; }
+  .reco-who { flex: 1; min-width: 0; }
+  .reco-name { font-size: 13px; font-weight: 700; color: #3a2f22; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .reco-sub { font-size: 11px; color: #8a7a68; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .reco-stat { text-align: right; flex: none; }
+  .reco-n { font-size: 16px; color: #D9A521; }
+  .reco-last { font-size: 11px; color: #8a7a68; }
+  .reco-row.off .reco-n { color: #c9bba6; }
 
   /* "Modo computadora": en pantallas grandes el dashboard rompe el ancho de
      teléfono (430px) y usa el espacio de la PC. Se activa solo cuando la vista
