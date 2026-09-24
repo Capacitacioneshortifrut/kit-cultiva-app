@@ -89,7 +89,7 @@
     saveRegistro: function (perfil, ritualId, entry) {
       var e = Object.assign({}, entry, { vals: markVals(entry.vals) });
       if (!isSb()) {
-        var arr = [e].concat(rRead(perfil, ritualId)).slice(0, 30);
+        var arr = [e].concat(rRead(perfil, ritualId)).slice(0, 500);
         rWrite(perfil, ritualId, arr); return Promise.resolve(e);
       }
       return client().from("registros")
