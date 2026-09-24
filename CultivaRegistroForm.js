@@ -86,6 +86,7 @@ function CultivaRegistroForm({ ritual, profileId, user, escalateTo }) {
   const [errs, setErrs] = rUse({});
   const [justSent, setJustSent] = rUse(null);
   const [open, setOpen] = rUse(false);   // historial plegado: se abre con el botón "Historial"
+  const [histPer, setHistPer] = rUse("mes");        // periodo visible del historial: "mes" | "anio"
   const [escaladoIds, setEscaladoIds] = rUse({}); // ts -> true
   const [drafts, setDrafts] = rUse({});           // ts -> { campoDiferido: valor }
   const [savedFollow, setSavedFollow] = rUse({});  // ts -> true (acaba de guardar seguimiento)
@@ -164,7 +165,7 @@ function CultivaRegistroForm({ ritual, profileId, user, escalateTo }) {
     // "Espacio de confianza": si el líder marcó "No lo resuelvo yo", sube al jefe directo.
     const escalaAlJefe = espacioConfianza && stored.resuelvoYo === false;
     const entry = { ts: Date.now(), escalado: false, vals: stored };
-    setHistory((h) => [entry].concat(h).slice(0, 30));
+    setHistory((h) => [entry].concat(h).slice(0, 500));
     setDrafts((p) => { const row = {}; deferFields.forEach((f) => { row[f.k] = ""; }); return Object.assign({}, p, { [entry.ts]: row }); });
     setVals(emptyValues(formFields)); setTemaOtro(""); setErrs({}); setRepQuery(""); setRepOpen(false);
     setJustSent({ ts: entry.ts, escalado: escalaAlJefe });
@@ -395,19 +396,27 @@ function CultivaRegistroForm({ ritual, profileId, user, escalateTo }) {
         RI("save", "ico-xs"), RT("form.save")),
     ),
 
-    // historial
-    rh("div", { className: "hist" },
+    // historial (filtrado por periodo: último mes / último año)
+    (() => {
+      const desde = Date.now() - (histPer === "anio" ? 365 : 30) * 86400000;
+      const histVis = history.filter((e) => (e.ts || 0) >= desde);
+      return rh("div", { className: "hist" },
       rh("button", { className: "hist-h" + (open ? " on" : ""), type: "button", onClick: () => setOpen(!open),
           "aria-expanded": open },
         rh("span", { className: "hist-ico" }, RI("history", "ico-xs")),
         rh("span", null, RT("form.history")),
         // siempre presente (vacío si no hay registros) para no insertar nodos junto a íconos lucide
-        rh("span", { className: "hist-count", style: history.length ? null : { display: "none" } }, history.length || ""),
+        rh("span", { className: "hist-count", style: histVis.length ? null : { display: "none" } }, histVis.length || ""),
         rh("span", { key: open ? "up" : "down", className: "hist-ico" }, RI(open ? "chevron-up" : "chevron-down", "ico-xs")),
       ),
-      (open && history.length === 0) ? rh("div", { className: "hist-empty" }, RT("form.historyEmpty")) : null,
-      (open && history.length > 0) && rh("div", { className: "hist-list" },
-        history.map((e, i) => {
+      open ? rh("div", { className: "hist-per", role: "group", "aria-label": RT("form.histPeriod") },
+        [["mes", RT("form.histMonth")], ["anio", RT("form.histYear")]].map(([v, lbl]) =>
+          rh("button", { key: v, type: "button", className: "hist-per-b" + (histPer === v ? " on" : ""),
+            "aria-pressed": histPer === v, onClick: () => setHistPer(v) }, lbl))) : null,
+      (open && histVis.length === 0) ? rh("div", { className: "hist-empty" },
+        history.length ? RT("form.historyEmptyPeriod") : RT("form.historyEmpty")) : null,
+      (open && histVis.length > 0) && rh("div", { className: "hist-list" },
+        histVis.map((e, i) => {
           // estado de la escalada que YO levanté desde este registro (si existe)
           const escInfo = e.id ? escStatus[e.id] : null;
           const st = escInfo ? ESC_ST[escInfo.status] : null;
@@ -462,7 +471,7 @@ function CultivaRegistroForm({ ritual, profileId, user, escalateTo }) {
           );
         }),
       ),
-    ),
+    ); })(),
   );
 }
 
