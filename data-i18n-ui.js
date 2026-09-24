@@ -28,7 +28,7 @@ window.UI_STRINGS = {
     "start.puestoQ": "¿Cuál es tu puesto?",
     "start.puestoHint": "Entrarás directo a los rituales de tu puesto.",
     "common.loading": "Cargando…",
-    "gallery.title": "Rituales"
+    "gallery.title": "Rituales",
     "gallery.sub": "Elige uno para ver el detalle.",
     "gallery.hi": "Hola, ",
     "gallery.changePuesto": "Cambiar puesto",
